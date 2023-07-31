@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <section className='w-screen h-screen' id="homepage">
-        heloo
+        
       </section>
     </>
   )
