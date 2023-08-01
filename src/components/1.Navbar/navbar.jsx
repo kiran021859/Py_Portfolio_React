@@ -30,9 +30,8 @@ function Navbar() {
             <div className="nav-icon" onClick={open_menu}>
               <img src={menu} alt="Nav_bar"/>
             </div>
-
           </div>
-        </nav>    
+        </nav>   
       </section>
     </>  
   )
