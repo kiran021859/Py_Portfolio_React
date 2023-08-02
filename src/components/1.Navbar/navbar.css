@@ -118,6 +118,6 @@
 
     .navlist.open {
         top: 100%;
-        background-image: linear-gradient(rgba(235, 232, 226, 1), rgba(214, 208, 200, 1));
+        background-color: rgba(179, 140, 109, 1);
     }
 }
