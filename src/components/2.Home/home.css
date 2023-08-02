@@ -2,15 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+    
     list-style: none;
     scroll-behavior: smooth;
 
 }
 
 #homepage {
-    background-image: linear-gradient(rgba(235, 232, 226, 1), rgba(214, 208, 200, 1));
+    background-image: url(./pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
     padding-top: 20%;
    
 }
@@ -18,8 +20,8 @@
 .home-text {
     font-size: 60px;
     width: 60%;
-    height: 400px;
-    background-color: green;
+    height: 50%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,21 +31,21 @@
 }
 
 .name-text{
-    background-color: white;
+    
     padding: 0;
-    border-bottom: 1px solid red;
+    
     
     
 }
 
 .aspiring-text{
-    background-color: white;
+    
     padding: 0;
     font-size: 25px;
 }
 
 .dev-text{
-    background-color: white;
+    
     padding: 0;
     
 }
@@ -51,11 +53,16 @@
 .button {
     background-color: rgba(235, 232, 226, 1);
     margin-top: 5%;
-    margin-left: 35px;
+    margin-left: 12%;
     width: 20%;
-    height: 5%;
+    height: 40px;
     font-size: 25px;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+    border: solid;
+    border-radius: 50px;
+    border-color: rgba(101, 67, 32, 1);
+    border-width: 5px;
 }
 
 /******************max-height************************/
@@ -138,6 +145,7 @@
     .button {
         width: 50%;
         transition: all .45s ease; 
+        margin-top: 25px;
     }
 }
 
@@ -163,6 +171,14 @@
     }
 }
 
+@media (max-height: 780px){
+    #homepage {
+        height: 900px;
+       
+    }
+    
+}
+
 @media (max-height: 660px){
 
     .home-text {
@@ -174,7 +190,7 @@
 
 @media (max-height: 615px){
     #homepage {
-        height: 550px;
+        height: 770px;
        
     }
     
@@ -182,13 +198,13 @@
 
 @media (max-height: 540px){
     .home-text {
-        font-size: 30px;
+        
         transition: all .45s ease;
     
         
     }
     .dev-text{
-        font-size: 30px;
+        
         transition: all .45s ease;
     }
     

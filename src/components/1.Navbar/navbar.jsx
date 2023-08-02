@@ -12,7 +12,7 @@ function Navbar() {
     <>  
       <section>
         <nav>
-          <div id='header' className="">
+          <div id='header' className="fixed flex justify-between bg-transparent">
             <div ClassName="logo">
               <a href="#" className="logo">Kir<span>a</span>n.</a>
             </div>
