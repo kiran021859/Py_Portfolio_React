@@ -9,9 +9,10 @@ import Aboutme from './components/3.AboutMe/aboutMe'
 
 
 
+
 function App() {
   
-
+  
   return (
     <>
       <Navbar/>
