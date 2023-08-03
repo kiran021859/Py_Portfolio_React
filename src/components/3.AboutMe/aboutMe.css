@@ -2,3 +2,67 @@
     background-image: linear-gradient(rgba(214, 208, 200, 1),rgba(235, 232, 226, 1));
 }
 
+#insideSlideShow {
+    display: flex;
+    align-items: center;
+}
+
+#text1{
+    
+    font-family: 'Roboto Slab', serif;
+    font-size: 60px;
+}
+
+#text2{
+    
+    font-family: 'Roboto Slab', serif;
+    padding-top: 10%;
+    border-color: brown;
+}
+
+#aboutMeContent{
+    padding-top: 2%;
+}
+
+@media (max-width:851px) {
+    #text2{
+        font-size: 15.5px;
+    }
+}
+
+@media (max-height:780px) {
+    #aboutpage {
+        height: 790px;
+    }
+
+}
+
+@media (max-width:780px) {
+    #aboutpage {
+        height: 1570px;
+    }
+}
+
+@media (max-width:425px) {
+    #text2{
+        font-size: 14.5px;
+    }
+}
+
+@media (max-width:373px) {
+    #text2{
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width:357px) {
+    #text2{
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width:330px) {
+    #text2{
+        font-size: 12px;
+    }
+}
