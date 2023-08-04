@@ -1,0 +1,14 @@
+#skillsPage{
+    /**background-image: linear-gradient(grey , rgba(214, 208, 200, 1));**/
+    background-color: aqua;
+    
+}
+
+#bigSquare{
+    background-color: green;
+    
+}
+
+#BSPosition{
+    padding-top: 3%;
+}

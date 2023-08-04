@@ -1,5 +1,5 @@
 #aboutpage {
-    background-image: linear-gradient(rgba(214, 208, 200, 1),rgba(235, 232, 226, 1));
+    background-image: linear-gradient(rgba(214, 208, 200, 1),grey);
 }
 
 #insideSlideShow {
@@ -17,7 +17,7 @@
     
     font-family: 'Roboto Slab', serif;
     padding-top: 10%;
-    border-color: brown;
+    border-color: rgba(101, 67, 32, 1);
 }
 
 #aboutMeContent{
