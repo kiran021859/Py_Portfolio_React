@@ -1,0 +1,35 @@
+#contact{
+    background-image: linear-gradient( grey, rgba(214, 208, 200, 1) );
+}
+
+#form-container{
+    width: 80%;
+    height: 60%;
+}
+
+#form{
+    background-color: blue;
+}
+
+#inside-form{
+    background-color: yellow;
+}
+
+#input{
+    background-color: green;
+    display: grid;
+    grid-template-columns: 150px 400px;
+    grid-template-rows: 30px 30px 30px 30px;
+    
+}
+
+#input label{
+    background-color: white;
+}
+
+#input input{
+
+}
+
+
+

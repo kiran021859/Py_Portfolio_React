@@ -5,7 +5,7 @@ import Home from './components/2.Home/home'
 import Aboutme from './components/3.AboutMe/aboutMe'
 import Skills from './components/4.Skills/skills'
 import Projects from './components/5.Projects/projects'
-//import Navbar from './components'
+import Communicate from './components/6.comunicate/communication'
 
 
 
@@ -20,6 +20,7 @@ function App() {
       <Aboutme/>
       <Skills/>
       <Projects/>
+      <Communicate/>
     </>
     
   )
