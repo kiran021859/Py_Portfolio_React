@@ -36,7 +36,7 @@ const nextSlide = () => {
 
   return (
     <>
-      <section className='h-screen' id="aboutpage">
+      <section className='h-screen flex justify-center items-center' id="aboutpage">
         <div className='grid grid-cols-1 md:grid-cols-2' id='aboutMeContent'> 
           <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative' id="slidesShow">
 

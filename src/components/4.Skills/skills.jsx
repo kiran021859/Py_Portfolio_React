@@ -14,7 +14,7 @@ function Skills() {
     <section id='skillsPage' className='h-screen '>
       <div className='' id='BSPosition'>
         <div id='bigSquare' className='max-w-[1400px] h-[780px] w-full py-16 px-4 '>
-          <div className='flex '>
+          <div className='flex justify-center'>
   
             <div id='container' className='max-w-[1400px]  relative grid '>
 

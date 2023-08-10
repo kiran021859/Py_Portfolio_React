@@ -1,22 +1,17 @@
 #skillsPage{
-    /**background-image: linear-gradient(grey , rgba(214, 208, 200, 1));**/
-    background-color: aqua;
-    
+    background-image: linear-gradient(grey , rgba(214, 208, 200, 1));
 }
 
-#bigSquare{
-    background-color: green;
-    
-}
+
 
 #BSPosition{
     padding-top: 3%;
 }
 
 #container{ 
-    background-color: yellow;
-   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-   grid-template-rows: 200px 200px 200px 200px;
+   width: 80%;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-template-rows: 180px 180px 180px 180px;
    grid-gap: 10px;
 }
 
@@ -49,6 +44,14 @@
     grid-row: span 1;
 }
 
+@media (max-height: 880px) {
+
+    #skillsPage{
+        height: 880px;
+    }
+
+}
+
 @media (max-width: 970px) {
 
     #container{
@@ -76,4 +79,11 @@
         grid-row: span 1;
     }
 
+    #skillsPage{
+        height: 1400px;
+    }
+
+
 }
+
+
