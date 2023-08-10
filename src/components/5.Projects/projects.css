@@ -1,3 +1,45 @@
-#section{
+#projects{
     background-image: linear-gradient( rgba(214, 208, 200, 1), grey );
 }
+
+#project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+#card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+#hover{
+    height: 0;
+    
+}
+
+#card:hover #hover{
+    height: 40%;
+    transition: height 0.5s;
+    
+}
+
+@media (max-width: 390px) {
+    #card{
+        width:80%;
+        height: 150px;
+    }
+}
+
+@media (max-height: 690px) {
+    #projects{
+        
+        height: 690px;
+    }
+}
+
