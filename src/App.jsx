@@ -6,6 +6,7 @@ import Aboutme from './components/3.AboutMe/aboutMe'
 import Skills from './components/4.Skills/skills'
 import Projects from './components/5.Projects/projects'
 import Communicate from './components/6.comunicate/communication'
+import Footer from './components/7.Footer/footer.jsx'
 
 
 
@@ -21,6 +22,8 @@ function App() {
       <Skills/>
       <Projects/>
       <Communicate/>
+      <Footer/>
+      
     </>
     
   )

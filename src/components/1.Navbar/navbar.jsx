@@ -2,17 +2,23 @@ import React, { useState } from 'react';
 import './navbar.css';
 import menu from './menu.jpg';
 import open_menu from './navbar1.js';
-//import react, {useState} from 'react';
-//import handleScroll from './navbar1.js';
 
+//import handleScroll from './navbar1.js';
+//fixed flex justify-between bg-transparent
 function Navbar() {
   //const [navbar, setNavbar] = useState(false);
+  const header = document.querySelector('.helo');
+  window.addEventListener("scroll", function () {
+    header.classList.toggle("active", window.scrollY > 100);
+});
+    
   
   return (
     <>  
       <section>
         <nav>
-          <div id='header' className="fixed flex justify-between bg-transparent">
+          <div id='header' className='helo
+          ]'>
             <div className="logo">
               <a href="#" className="logo">Kir<span>a</span>n.</a>
             </div>

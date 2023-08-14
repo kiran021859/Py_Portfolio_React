@@ -3,6 +3,11 @@ import './home.css'
 import '../../assets/pictures/pic1.png'
 
 function Home() {
+  
+
+
+
+
   return (
     <>
       <section className='  h-screen' id="homepage">
