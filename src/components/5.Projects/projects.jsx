@@ -2,10 +2,10 @@ import React from 'react'
 import './projects.css'
 //import html from './pictures/html.png';
 //import css from './pictures/css.png';
-import slide from './pictures/background.png';
-import python from './pictures/python.png';
-import java from './pictures/java.png';
-import sql from './pictures/sql.png';
+import slide from '../../assets/pictures/background.png';
+import python from '../../assets/pictures/python.png';
+import java from '../../assets/pictures/java.png';
+import sql from '../../assets/pictures/sql.png';
 
 function Projects() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import './communication.css'
-import slide from './pictures/background.png';
-import linkedin from './pictures/linkedin-logo-24.png';
-import github from './pictures/github-logo-24.png';
-import WhatsApp from './pictures/user-regular-24.png';
+import slide from '../../assets/pictures/background.png';
+import linkedin from '../../assets/pictures/linkedin-logo-24.png';
+import github from '../../assets/pictures/github-logo-24.png';
+import WhatsApp from '../../assets/pictures/user-regular-24.png';
 
 function Communication() {
   return (

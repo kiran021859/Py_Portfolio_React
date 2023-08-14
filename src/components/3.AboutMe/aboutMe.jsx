@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './aboutMe.css';
-import html from './pictures/html.png';
-import me from './pictures/me.png';
-import project from './pictures/myProject.png';
-import background from './pictures/background.png';
+import html from '../../assets/pictures/html.png';
+import me from '../../assets/pictures/me.png';
+import project from '../../assets/pictures/myProject.png';
+import background from '../../assets/pictures/background.png';
 //import rightArrow from './pictures/right-arrow-solid-24.png';
 //import leftArrow from './pictures/left-arrow-solid-24.png';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';

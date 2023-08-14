@@ -1,11 +1,11 @@
 import React from 'react'
 import './home.css'
-import './pic1.png'
+import '../../assets/pictures/pic1.png'
 
 function Home() {
   return (
     <>
-      <section className='w-screen h-screen' id="homepage">
+      <section className='  h-screen' id="homepage">
       <div className='home-text'>
         <div className='name-text'>
           <h1>Kiran Isaacs</h1>

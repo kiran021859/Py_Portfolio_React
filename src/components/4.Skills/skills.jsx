@@ -1,11 +1,11 @@
 import React from 'react'
 import './skills.css'
-import html from './pictures/html.png';
-import css from './pictures/css.png';
-import javascript from './pictures/javascript.png';
-import python from './pictures/python.png';
-import java from './pictures/java.png';
-import sql from './pictures/sql.png';
+import html from '../../assets/pictures/html.png';
+import css from '../../assets/pictures/css.png';
+import javascript from '../../assets/pictures/javascript.png';
+import python from '../../assets/pictures/python.png';
+import java from '../../assets/pictures/java.png';
+import sql from '../../assets/pictures/sql.png';
 {/**grid grid-cols-4 gap-4**/}
 {/**w-full h-full rounded-2xl bg-center bg-cover**/}
 function Skills() {
