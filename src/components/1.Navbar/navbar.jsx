@@ -1,24 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import menu from './menu.jpg';
 import open_menu from './navbar1.js';
 
-//import handleScroll from './navbar1.js';
 //fixed flex justify-between bg-transparent
 function Navbar() {
-  //const [navbar, setNavbar] = useState(false);
-  const header = document.querySelector('.helo');
-  window.addEventListener("scroll", function () {
-    header.classList.toggle("active", window.scrollY > 100);
-});
-    
+ 
+
+const [headerId, setHeaderId] = useState('header');
+  
+const handleScroll = () => {
+  if (window.scrollY > 100) {
+    setHeaderId('header1');
+  } else {
+    setHeaderId('header');
+  }
+};
+
+useEffect(() => {
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
   
   return (
     <>  
       <section>
         <nav>
-          <div id='header' className='helo
-          ]'>
+          <div id={headerId} className='helo'>
             <div className="logo">
               <a href="#" className="logo">Kir<span>a</span>n.</a>
             </div>

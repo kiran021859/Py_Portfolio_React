@@ -24,6 +24,11 @@
     font-family:  'Roboto Slab', serif;
 }
 
+#box:hover{
+    transform: scale(1.2);
+    
+}
+
 #container #box:nth-child(1){
     grid-column: span 3;
     grid-row: span 1;
@@ -47,7 +52,7 @@
 @media (max-height: 880px) {
 
     #skillsPage{
-        height: 880px;
+        height: 885px;
     }
 
 }

@@ -8,12 +8,12 @@ import WhatsApp from '../../assets/pictures/user-regular-24.png';
 function Communication() {
   return (
     <section id='contact' className='h-screen flex justify-center items-center'>
-      <div className="contact-form " style={{backgroundImage: `url(${slide})`}}>
+      <div id='contact-form' className="" style={{backgroundImage: `url(${slide})`}}>
         <form action="https://formsubmit.co/kiranisaacs12@gmail.com" method="POST">
-            <input type="name" name="name" placeholder="Your Name" required></input>
-            <input type="email" name="email" placeholder="Your Email" required></input>
-            <input type="" name="phone number" placeholder="Your Mobile Number" required></input>
-            <textarea name="message" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+            <input type="name" name="name" placeholder="Name:" required></input>
+            <input type="email" name="email" placeholder="Email:" required></input>
+            <input type="" name="phone number" placeholder="Mobile Number:" required></input>
+            <textarea name="message" id="" cols="35" rows="10" placeholder="How Can I Help You:" required></textarea>
         </form> 
       </div>
       <div id='icons-container' className=''>
