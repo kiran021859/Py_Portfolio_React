@@ -30,18 +30,20 @@
     justify-content: space-between;
     flex-direction: column;
     font-size: 350%;
+    font-family: 'Roboto Slab', serif;
     width: 90%;
     height: 50%;
-    font-family: 'Roboto Slab', serif;
-    
     margin-bottom: 30px;
 }
 
 #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     margin-top: 5%;
     width: 250px;
-    height: 40px;
+    height: 45px;
     font-size: 25px;
     color: #F4A175;
     text-align: center;
@@ -49,7 +51,8 @@
     border: solid;
     border-radius: 50px;
     border-color: #F4A175;
-    border-width: 5px;
+    border-width: 1px;
+    cursor: pointer;
 }
 
 #block2{
@@ -75,6 +78,7 @@
     transform: scale(1.1);
     background-color: #F4A175;
     color: black;
+    border-color: black;
 }
 
 

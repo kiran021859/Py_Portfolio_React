@@ -1,18 +1,26 @@
 #skillsPage{
     background-image: linear-gradient(grey , rgba(214, 208, 200, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-
-
-#BSPosition{
-    padding-top: 3%;
+#skills-text{
+    font-size: 350%;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
 }
 
 #container{ 
    width: 80%;
+   height: auto;
    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
    grid-template-rows: 180px 180px 180px 180px;
-   grid-gap: 10px;
+   grid-gap: 20px;
+   
 }
 
 #container #box #square{
@@ -25,7 +33,8 @@
 }
 
 #box:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    transition: all .45s ease;
     
 }
 
@@ -85,7 +94,8 @@
     }
 
     #skillsPage{
-        height: 1400px;
+        height: 1500px;
+        background-color: green;
     }
 
 

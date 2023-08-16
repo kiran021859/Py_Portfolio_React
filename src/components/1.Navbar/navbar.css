@@ -31,10 +31,6 @@
     background-color: rgba(214, 208, 200, 1);
 }
 
-.helo.active{
-    background-color: rgba(214, 208, 200, 1);
-}
-
 .logo {
     
     font-size: 35px;
@@ -74,6 +70,17 @@
 
 }
 
+#nav-icon {
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+
+}
+
+#nav-icon:hover{
+    transform: scale(1.2);
+}
 
 .open {
     display:grid;
@@ -92,7 +99,7 @@
 
 @media (max-width: 840px) {
 
-    .nav-icon{
+    #nav-icon{
         display: block;
         
     }
@@ -105,9 +112,21 @@
         left: 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
         text-align: left;
         transition: all .45s ease;
         
+    }
+    .navlist li{
+       
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
     }
 
     .navlist a {
@@ -115,23 +134,36 @@
         margin: 17px;
         font-size: 20px;
         transition: all .45s ease;
+        color: #F4A175;
         
         
     }
 
     .navlist a:hover {
-        padding: 17px;
-        background-image: linear-gradient(rgba(235, 232, 226, 1), rgba(214, 208, 200, 1));
         transition: all .45s ease;
+        
+        width: auto;
+        height: auto;
+        
+    }
+    .navlist li:hover{
+        background-color: #F4A175;
         
     }
 
+    .navlist li:hover a{
+        color: black;
+        
+    }
+ 
     .navlist a.active {
         color: var(--text-color);
     }
 
     .navlist.open {
         top: 100%;
-        background-color: rgba(235, 232, 226, 1);
+        background-color: black;
     }
+
+    
 }

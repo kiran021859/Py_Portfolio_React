@@ -2,7 +2,19 @@
     background-image: linear-gradient( grey, rgba(214, 208, 200, 1) );
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+}
+
+#contact-text{
+    font-size: 350%;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: black;
 }
 
 #contact-form {
@@ -41,26 +53,29 @@ form textarea {
 }
 
 #submit {
-    display: inline-block;
-    height:50px;
-    font-size: 16px;
-    font-family: 'Roboto Slab', serif;
-    background: white;
-    color: black;
-    width: 160px;
-    transition: all .45s ease;
-    border-style: solid;
-    border-width: 7px;
-    border-color: rgba(117, 75, 50, 1);
-    border-radius: 25px;
-    margin-right: 5%;
-    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
     
+    width: 250px;
+    height: 45px;
+    font-size: 25px;
+    color: #F4A175;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    border: solid;
+    border-radius: 50px;
+    border-color: #F4A175;
+    border-width: 1px;
+    cursor: pointer;
 }
 
 #submit:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #F4A175;
+    color: black;
+    border-color: black;
 }
 
 @media (max-height:620px){
@@ -69,21 +84,33 @@ form textarea {
     }
 }
 
+
 #icons-container{
+    width: 50%;
     display:flex;
-    justify-content: space-between;
-    height: 70px;
+    justify-content: space-around;
+    height: 200px;
     border-radius: 15px;
     margin-top: 5%;
     
+}
+
+#icons-div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #icons{
     height: 40px;
     width: 45px;
     margin: 5px;
-    background-color: rgba(117, 75, 50, 1);
+    background-color: #F4A175;
     border-radius: 50%;
+    border: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1px;
     transition: all .45s ease;
 }
 
@@ -108,47 +135,42 @@ form textarea {
 @media (max-width:710px){
     #icons{
         height: 40px;
-        width: 40px;
+        width: 50px;
     }
+
+    #icons-container{
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #icons-div{
+        width: 100%;
+    }
+    
 }
 
 @media (max-width:610px){
-    #icons-container{
-        grid-template-columns: 40% 10% 10% 10% ; 
-    }
+    
 }
 
 @media (max-width: 575px){
-    #icons{
-        height: 30px;
-        width: 30px;
-    }
+    
 }
 
 @media (max-width: 450px){
-    #icons-container{
-        grid-template-columns: 50% 10% 10% 10% ; 
-    }
-
-    #icons{
-        height: 25px;
-        width: 25px;
-    }
+    
+   
 }
 
 @media (max-width: 450px){
-    #icons-container{
-        grid-template-columns: 50% 15% 15% 15% ; 
-    }
+    
 }
 
 @media (max-width: 450px){
-    #icons-container{
-        grid-template-columns: 60% 12% 12% 12% ; 
-    }
+    
 
-    #icons{
-        height: 25px;
-        width: 25px;
-    }
+    
 }

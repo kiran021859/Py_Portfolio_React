@@ -43,7 +43,7 @@ useEffect(() => {
               </ul>
             </div>
 
-            <div className="nav-icon" onClick={open_menu}>
+            <div className="" id='nav-icon' onClick={open_menu}>
               <img src={menu} alt="Nav_bar"/>
             </div>
           </div>
