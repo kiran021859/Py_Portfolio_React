@@ -85,6 +85,15 @@
 
 /******************max-height************************/
 
+
+@media (max-height: 600px){
+    #homepage {
+       height: 700px;
+       
+    }
+    
+}
+
 @media (max-width:1020px){
     
 }
@@ -171,10 +180,7 @@
     
 }
 
-@media (max-height: 615px){
-    
-    
-}
+
 
 @media (max-height: 540px){
     

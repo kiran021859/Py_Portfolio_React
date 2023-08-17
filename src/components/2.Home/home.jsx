@@ -2,6 +2,9 @@ import React from 'react'
 import './home.css'
 import backgroundImage from '../../assets/pictures/fadeBackground.png'
 import me from '../../assets/pictures/me.png';
+
+
+
 function Home() {
   
 

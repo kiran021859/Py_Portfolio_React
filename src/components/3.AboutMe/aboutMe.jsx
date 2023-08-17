@@ -11,33 +11,43 @@ import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 
 function AboutMe() {
 
-const slides = [
-  {url: me},
-  {url: background}, 
-  {url: html}, 
-  {url: project},  
-];
+  const slides = [
+    {url: me},
+    {url: background}, 
+    {url: html}, 
+    {url: project},  
+  ];
 
-const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-const prevSlide = () => {
-  const isFirstSlide = currentIndex === 0;
-  const newIndex = isFirstSlide ? slides.length -1 : currentIndex -1;
-  setCurrentIndex(newIndex);
-}
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length -1 : currentIndex -1;
+    setCurrentIndex(newIndex);
+  }
 
-const nextSlide = () => {
-  const isLastSlide = currentIndex === slides.length - 1;
-  const newIndex = isLastSlide ? 0: currentIndex + 1;
-  setCurrentIndex(newIndex);
-}
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0: currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }
+
+  const aboutLine = document.querySelector('#aboutMeContent')
+
+  window.onscroll = () => {
+    let pos = window.scrollY -800;
+    aboutLine.style.left = `${pos}px`;
+    
+    
+  }
+
 
 //grid grid-cols-2
 
   return (
     <>
-      <section className='h-screen flex justify-center items-center' id="aboutpage">
-        <div className='grid grid-cols-1 md:grid-cols-2' id='aboutMeContent'> 
+      <section className='h-screen'  id="aboutpage">
+        <div className='' id='aboutMeContent'> 
           <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative' id="slidesShow">
 
             <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 group' id='insideSlideShow'>

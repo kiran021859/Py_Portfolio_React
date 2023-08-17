@@ -12,9 +12,12 @@
     font-family: 'Roboto Slab', serif;
     margin-top: 5%;
     margin-bottom: 5%;
+    border-top-style: none;
+    border-right-style: none;
     border-bottom-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border-left-style: none;
+    border-width: 3px;
+    border-color: #F4A175;
 }
 
 #contact-form {

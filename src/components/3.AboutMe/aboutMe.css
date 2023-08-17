@@ -1,6 +1,11 @@
 #aboutpage {
     background-image: linear-gradient(rgba(214, 208, 200, 1),grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 #insideSlideShow {
     display: flex;
@@ -14,21 +19,25 @@
 }
 
 #text2{
+    font-size: 1.35vw;
+}
+
+#text2{
     
     font-family: 'Roboto Slab', serif;
     padding-top: 10%;
-    border-color: rgba(101, 67, 32, 1);
+    border-color: #F4A175;
 }
 
 #aboutMeContent{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
     padding-top: 2%;
+   
 }
 
-@media (max-width:851px) {
-    #text2{
-        font-size: 15.5px;
-    }
-}
+
 
 @media (max-height:780px) {
     #aboutpage {
@@ -37,32 +46,31 @@
 
 }
 
-@media (max-width:780px) {
+@media (max-width:945px) {
+    #aboutMeContent{
+        
+        grid-template-columns: 100%;
+    }
+
     #aboutpage {
         height: 1570px;
+    }
+
+    #text2{
+        font-size: 2.3vw;
+    }
+
+}
+
+@media (max-width:630px) {
+    #text2{
+        font-size: 3vw;
     }
 }
 
 @media (max-width:425px) {
     #text2{
-        font-size: 14.5px;
+        font-size: 3.5vw;
     }
 }
 
-@media (max-width:373px) {
-    #text2{
-        font-size: 13.5px;
-    }
-}
-
-@media (max-width:357px) {
-    #text2{
-        font-size: 12.5px;
-    }
-}
-
-@media (max-width:330px) {
-    #text2{
-        font-size: 12px;
-    }
-}

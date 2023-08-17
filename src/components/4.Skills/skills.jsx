@@ -19,39 +19,41 @@ function Skills() {
 
       <div id='container' className='max-w-[1400px]  relative grid '>
         
-        <div id='box' className='grid '> 
-          <div id='square' className='w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${javascript})`}}>
+        <div id='box' className=''> 
+          <div id='square' className='B1 w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${javascript})`}}>
             <h1>JavaScript</h1>
+            
           </div>
         </div>        
 
         <div id='box' className='grid'>
-          <div id='square' className='w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${python})`}}>
+          <div id='square' className='B2 w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${python})`}}>
             <h1>Python</h1>
+            <p></p>
           </div>
         </div>
             
         
         <div id='box' className='grid'>
-          <div id='square' className='w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${java})`}}>
+          <div id='square' className='B3 w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${java})`}}>
             <h1>Java</h1>
           </div>
         </div>
 
         <div id='box' className='grid'>
-          <div id='square' className='w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${html})`}}>
+          <div id='square' className='B4 w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${html})`}}>
             <h1>HTML</h1>
           </div>
         </div>
 
         <div id='box' className='grid'>
-          <div id='square' className='w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${css})`}}>
+          <div id='square' className='B5 w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${css})`}}>
             <h1>CSS</h1>
           </div>
         </div>
 
         <div id='box' className='grid'>
-          <div id='square' className='w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${sql})`}}>
+          <div id='square' className='B6 w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${sql})`}}>
             <h1>SQL</h1>
           </div>
         </div>
