@@ -14,7 +14,7 @@ function Communication() {
     window.open('https://www.linkedin.com/in/kiran-isaacs-885184265/', '_blank');
   };
 
-  
+   
 
 
   return (
@@ -23,15 +23,16 @@ function Communication() {
         <h1>CONTACT ME</h1>
       </div>
       <div id='contact-form' className="" style={{backgroundImage: `url(${slide})`}}>
-        <form action="https://formsubmit.co/kiranisaacs12@gmail.com" method="POST">
-            <input type="name" name="name" placeholder="Name:" required></input>
-            <input type="email" name="email" placeholder="Email:" required></input>
-            <input type="" name="phone number" placeholder="Mobile Number:" required></input>
-            <textarea name="message" id="" cols="35" rows="10" placeholder="How Can I Help You:" required></textarea>
+        <form action="" method="">
+            <input type="text" id="name" placeholder="Name:" ></input>
+            <input type="email" id="email" placeholder="Email:" ></input>
+            <input type="number" id="phone number" placeholder="Mobile Number:" ></input>
+            <textarea id="msgContent" cols="35" rows="10" placeholder="How Can I Help You:" ></textarea>
+            <button type="submit" value="Send Message" id="submit" >Submit</button>
         </form> 
       </div>
       <div id='icons-container' className=''>
-        <input type="submit" value="Send Message" id="submit" required></input>
+        
         <div className='flex' id='icons-div'>
           <div style={{backgroundImage: `url(${linkedin})`}} className='bg-center bg-cover' id='icons' onClick={openLinkedInProfile}></div>
           <div style={{backgroundImage: `url(${github})`}} className='bg-center bg-cover' id='icons' onClick={openGithubProfile}></div>

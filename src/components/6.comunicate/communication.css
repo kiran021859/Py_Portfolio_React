@@ -72,6 +72,7 @@ form textarea {
     border-color: #F4A175;
     border-width: 1px;
     cursor: pointer;
+    margin-bottom: 6px;
 }
 
 #submit:hover {
@@ -83,7 +84,7 @@ form textarea {
 
 @media (max-height:620px){
     #contact{
-        height: 620px;
+        height: 630px;
     }
 }
 
@@ -95,6 +96,7 @@ form textarea {
     height: 200px;
     border-radius: 15px;
     margin-top: 5%;
+    
     
 }
 
@@ -115,6 +117,7 @@ form textarea {
     border-color: black;
     border-width: 1px;
     transition: all .45s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 #icons:hover {
@@ -172,8 +175,10 @@ form textarea {
     
 }
 
-@media (max-width: 450px){
-    
+@media (max-width: 370px){
+    #contact-text{
+        font-size: 250%;
+    }
 
     
 }
