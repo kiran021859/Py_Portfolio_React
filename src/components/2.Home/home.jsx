@@ -1,22 +1,22 @@
-import React from 'react'
-import './home.css'
-import backgroundImage from '../../assets/pictures/fadeBackground.png'
+import React, { useEffect }  from 'react';
+import './home.css';
+import backgroundImage from '../../assets/pictures/fadeBackground.png';
 import me from '../../assets/pictures/me.png';
 import CV from '../../assets/cv/CV-for-portfolio.pdf';
 
 
 
 
+
 function Home() {
   
-
-
+  
 
 
   return (
     <>
       <section className='h-screen bg-repeat-x' id="homepage" style={{backgroundImage: `url(${backgroundImage})`}}>
-        <div id='block1' className=''>
+        <div id='block1' className='' >
           <div className='' id='home-text'>
 
               <h1>Kiran Isaacs</h1>
