@@ -42,7 +42,14 @@ function Communication() {
     };
     const res = await fetch('https://react-js-portfolio-db-default-rtdb.firebaseio.com/Messages.json', option);  // Corrected URL spelling
     console.log(res);
-    window.location.reload();
+
+    setUserData({
+      Name: '', 
+      Email: '', 
+      PhoneNumber: '', 
+      MsgContent: ''
+    });
+    
   };
 
   
@@ -58,7 +65,10 @@ function Communication() {
             <input type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
             <input type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
             <textarea name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
+            <div id='Button-Message'>
             <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
+            <div id='messageSent-text' className=''>Message Sent</div>
+            </div>
         </form> 
       </div>
       <div id='icons-container' className=''>

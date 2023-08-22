@@ -54,6 +54,29 @@ form textarea {
     height: 240px;
     
 }
+#Button-Message{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#messageSent-text{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    
+    width: 250px;
+    height: 45px;
+    font-size: 25px;
+    color: balck;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    border: solid;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 6px;
+}
 
 #submit {
     display: flex;
@@ -154,6 +177,14 @@ form textarea {
 
     #icons-div{
         width: 100%;
+    }
+
+    #Button-Message{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
     }
     
 }
