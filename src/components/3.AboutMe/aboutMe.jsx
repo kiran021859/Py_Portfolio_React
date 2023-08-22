@@ -38,14 +38,9 @@ function AboutMe() {
     setCurrentIndex(newIndex);
   }
 
-  const aboutLine = document.querySelector('#aboutMeContent')
+  
 
-  window.onscroll = () => {
-    let pos = window.scrollY -800;
-    aboutLine.style.left = `${pos}px`;
-    
-    
-  }
+  
 
 
 //grid grid-cols-2
