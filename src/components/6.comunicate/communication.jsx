@@ -4,8 +4,7 @@ import slide from '../../assets/pictures/background.png';
 import linkedin from '../../assets/pictures/linkedin-logo-24.png';
 import github from '../../assets/pictures/github-logo-24.png';
 import WhatsApp from '../../assets/pictures/user-regular-24.png';
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 function Communication() {
 
@@ -46,17 +45,14 @@ function Communication() {
     window.location.reload();
   };
 
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+  
 
   return (
     <section id='contact' className='h-screen'>
-      <div id='contact-text' className='' data-aos="fade-up">
+      <div id='contact-text' className='' >
         <h1>CONTACT ME</h1>
       </div>
-      <div id='contact-form' className="" style={{backgroundImage: `url(${slide})`}} data-aos="fade-left">
+      <div id='contact-form' className="" style={{backgroundImage: `url(${slide})`}} >
         <form action="" method="POST">
             <input type="text" name="Name" value={userData.Name} placeholder="Name:" onChange={Data}></input>
             <input type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
