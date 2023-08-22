@@ -9,10 +9,7 @@ import "aos/dist/aos.css";
 
 function Communication() {
 
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+  
 
   const openGithubProfile = () => {
     window.open('https://github.com/kiran021859', '_blank');
@@ -46,8 +43,13 @@ function Communication() {
     };
     const res = await fetch('https://react-js-portfolio-db-default-rtdb.firebaseio.com/Messages.json', option);  // Corrected URL spelling
     console.log(res);
+    window.location.reload();
   };
 
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <section id='contact' className='h-screen'>
