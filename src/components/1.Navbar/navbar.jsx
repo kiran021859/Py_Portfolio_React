@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, } from 'react';
 import './navbar.css';
 import menu from './menu.jpg';
 import open_menu from './navbar1.js';
@@ -6,6 +6,8 @@ import open_menu from './navbar1.js';
 //fixed flex justify-between bg-transparent
 function Navbar() {
  
+
+  
 
 const [headerId, setHeaderId] = useState('header');
   

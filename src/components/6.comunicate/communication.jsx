@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useRef} from 'react'
 import './communication.css'
 import slide from '../../assets/pictures/background.png';
 import linkedin from '../../assets/pictures/linkedin-logo-24.png';
@@ -7,7 +7,7 @@ import WhatsApp from '../../assets/pictures/user-regular-24.png';
 
 
 function Communication() {
-
+ 
   
 
   const openGithubProfile = () => {
@@ -27,6 +27,8 @@ function Communication() {
     const value = e.target.value;
     setUserData({ ...userData, [name]: value });
   };
+  
+  
 
   const send = async (e) => {
     const { Name, Email, PhoneNumber, MsgContent } = userData;
@@ -52,6 +54,17 @@ function Communication() {
     
   };
 
+  const sentText = useRef(null);
+  const [isSentTextVisible, setSentTextVisible] = useState(true);
+
+  const toggleSentTextDisplay = () => {
+    const { current } = sentText;
+    current.style.display = isSentTextVisible ? 'none' : 'flex';
+    setSentTextVisible(!isSentTextVisible);
+  };
+
+  
+
   
 
   return (
@@ -67,7 +80,7 @@ function Communication() {
             <textarea name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
             <div id='Button-Message'>
             <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
-            <div id='messageSent-text' className=''>Message Sent</div>
+            <div id='messageSent-text' className='' ref={sentText}>Message Sent</div>
             </div>
         </form> 
       </div>
