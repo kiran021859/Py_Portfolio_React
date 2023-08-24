@@ -23,6 +23,7 @@
     width: 80%;
     height: 700px;
     display: grid;
+    padding: 16px 4px 16px 4px;
     grid-template-columns: 32.5% 32.5% 32.5%;
     align-items: center;
     gap: 2%;
@@ -98,6 +99,9 @@
 }
 
 
-
+.project-active{
+    
+    background-color: aqua;
+}
 
 
