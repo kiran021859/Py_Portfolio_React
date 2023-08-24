@@ -7,12 +7,13 @@ import background from '../../assets/pictures/background.png';
 //import rightArrow from './pictures/right-arrow-solid-24.png';
 //import leftArrow from './pictures/left-arrow-solid-24.png';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
+import { useInView } from 'react-intersection-observer';
 
 
 
 function AboutMe() {
 
-  
+  const { ref: myAboutRef, inView: myAboutIsVisible } = useInView();
 
   const slides = [
     {url: me},
@@ -45,7 +46,7 @@ function AboutMe() {
   return (
     <>
       <section className='h-screen'  id="aboutpage">
-        <div className='' id='aboutMeContent'> 
+        <div  className={`aboutMeContent${myAboutIsVisible ? "-active":""}`} ref={myAboutRef} > 
           <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative' id="slidesShow">
 
             <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 group' id='insideSlideShow'>
