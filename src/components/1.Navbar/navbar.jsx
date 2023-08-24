@@ -28,9 +28,9 @@ useEffect(() => {
   
   return (
     <>  
-      <section>
+      <section id='header-section'>
         <nav>
-          <div id={headerId} className='helo'>
+          <div id={headerId} className='w-screen'>
             <div className="logo">
               <a href="#" className="logo">Kir<span>a</span>n.</a>
             </div>

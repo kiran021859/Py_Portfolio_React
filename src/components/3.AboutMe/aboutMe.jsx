@@ -46,7 +46,7 @@ function AboutMe() {
   return (
     <>
       <section className='h-screen'  id="aboutpage">
-        <div  className={`aboutMeContent${myAboutIsVisible ? "-active":""}`} ref={myAboutRef} > 
+        <div className={`aboutMeContent${myAboutIsVisible ? "-active":""}`} ref={myAboutRef} > 
           <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative' id="slidesShow">
 
             <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 group' id='insideSlideShow'>
