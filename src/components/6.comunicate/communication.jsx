@@ -4,10 +4,15 @@ import slide from '../../assets/pictures/background.png';
 import linkedin from '../../assets/pictures/linkedin-logo-24.png';
 import github from '../../assets/pictures/github-logo-24.png';
 import WhatsApp from '../../assets/pictures/user-regular-24.png';
-
+import { useInView } from 'react-intersection-observer';
 
 function Communication() {
  
+
+  const { ref: myTableRef, inView: myTableIsVisible } = useInView();
+
+  const { ref: myIconsRef, inView: myIconsIsVisible } = useInView();
+  
   
 
   const openGithubProfile = () => {
@@ -72,12 +77,12 @@ function Communication() {
       <div id='contact-text' className='' >
         <h1>CONTACT ME</h1>
       </div>
-      <div id='contact-form' className="" style={{backgroundImage: `url(${slide})`}} >
-        <form action="" method="POST">
-            <input type="text" name="Name" value={userData.Name} placeholder="Name:" onChange={Data}></input>
-            <input type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
-            <input type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
-            <textarea name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
+      <div id='' className={`contact-form${myTableIsVisible ? "-active":""}`} style={{backgroundImage: `url(${slide})`}} ref={myTableRef}>
+        <form id='form' action="" method="POST">
+            <input id='input' type="text" name="Name" value={userData.Name} placeholder="Name:" onChange={Data}></input>
+            <input id='input' type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
+            <input id='input' type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
+            <textarea id='textarea' name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
             <div id='Button-Message'>
             <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
             <div id='messageSent-text' className='' ref={sentText}>Message Sent</div>
@@ -86,7 +91,7 @@ function Communication() {
       </div>
       <div id='icons-container' className=''>
         
-        <div className='flex' id='icons-div' data-aos="fade-right">
+        <div className={`icons-div${myIconsIsVisible ? "-active":""}`} id='' ref={myIconsRef}>
           <div style={{backgroundImage: `url(${linkedin})`}} className='bg-center bg-cover' id='icons' onClick={openLinkedInProfile}></div>
           <div style={{backgroundImage: `url(${github})`}} className='bg-center bg-cover' id='icons' onClick={openGithubProfile}></div>
           <div style={{backgroundImage: `url(${WhatsApp})`}} className='bg-center bg-no-repeat' id='icons' onClick={openGithubProfile}></div>

@@ -11,19 +11,19 @@ import { useInView } from 'react-intersection-observer';
 
 function Projects() {
 
-  const { ref: myRef, inView: myElementIsVisible } = useInView();
+  const { ref: myProjectsRef, inView: myProjectsIsVisible } = useInView();
 
  
   
   //the code on top is === to the code at the bottom
   
   /*const myRef = useRef();
-  const [myElementIsVisible, setMyElementIsVisible] = useState();
-  console.log('myElementIsVisible', myElementIsVisible);
+  const [myProjectsIsVisible, setMyProjectsIsVisible] = useState();
+  console.log('myProjectsIsVisible', myProjectsIsVisible);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      setMyElementIsVisible(entry.isIntersecting);
+      setMyProjectsIsVisible(entry.isIntersecting);
     })
     observer.observe(myRef.current)
   }, [] )*/
@@ -37,7 +37,7 @@ function Projects() {
         <h1>PROJECTS</h1>
       </div>
 
-      <div id='project-container' className={`project-container${myElementIsVisible ? "-active":""}`} ref={myRef}>
+      <div id='project-container' className={`project-container${myProjectsIsVisible ? "-active":""}`} ref={myProjectsRef}>
 
         <div id='card' className='w-full h-full rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${python})`}}>
           <div id='hover' className='w-full h-full bg-center bg-cover' >
