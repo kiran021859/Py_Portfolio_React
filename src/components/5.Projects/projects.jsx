@@ -37,7 +37,7 @@ function Projects() {
         <h1>PROJECTS</h1>
       </div>
 
-      <div id='project-container' className={myElementIsVisible ? "project-active":""} ref={myRef}>
+      <div id='project-container' className={`project-container${myElementIsVisible ? "-active":""}`} ref={myRef}>
 
         <div id='card' className='w-full h-full rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${python})`}}>
           <div id='hover' className='w-full h-full bg-center bg-cover' >
