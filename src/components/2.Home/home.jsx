@@ -3,7 +3,7 @@ import './home.css';
 import backgroundImage from '../../assets/pictures/fadeBackground.png';
 import me from '../../assets/pictures/me.png';
 import CV from '../../assets/cv/CV-for-portfolio.pdf';
-
+//style={{backgroundImage: `url(${backgroundImage})`}}
 
 
 
@@ -15,13 +15,11 @@ function Home() {
 
   return (
     <>
-      <section className='h-screen bg-repeat-x' id="homepage" style={{backgroundImage: `url(${backgroundImage})`}}>
+      <section className='h-screen' id="homepage" >
         <div id='block1' className='' >
           <div className='' id='home-text'>
 
               <h1>Kiran Isaacs</h1>
-            
-              <h2>Aspiring</h2>
             
               <h1>Software Developer</h1>
             
