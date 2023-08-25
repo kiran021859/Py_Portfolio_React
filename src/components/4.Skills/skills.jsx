@@ -16,7 +16,7 @@ function Skills() {
 
   return (
     
-    <section id='skillsPage' className='h-screen w-full'>
+    <section id='skillsPage' className='w-full'>
 
       <div id='skills-text' className=''>
         <h1>SKILLS</h1>
