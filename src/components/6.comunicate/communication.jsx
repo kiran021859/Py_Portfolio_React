@@ -48,7 +48,7 @@ function Communication() {
         Name, Email, PhoneNumber, MsgContent,
       })
     };
-    const res = await fetch('https://react-js-portfolio-db-default-rtdb.firebaseio.com/Messages.json', option);  // Corrected URL spelling
+    const res = await fetch('https://react-js-portfolio-db-default-rtdb.firebaseio.com/laptops.json', option);  // Corrected URL spelling
     console.log(res);
 
     setUserData({
