@@ -5,6 +5,7 @@ import linkedin from '../../assets/pictures/linkedin-logo-24.png';
 import github from '../../assets/pictures/github-logo-24.png';
 import WhatsApp from '../../assets/pictures/user-regular-24.png';
 import { useInView } from 'react-intersection-observer';
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Communication() {
  
@@ -59,6 +60,7 @@ function Communication() {
     
   };
 
+
   const sentText = useRef(null);
   const [isSentTextVisible, setSentTextVisible] = useState(true);
 
@@ -69,9 +71,11 @@ function Communication() {
   };
 
   
-
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
   
-
+//<div id='messageSent-text' className='' ref={sentText}>Message Sent</div>
   return (
     <section id='contact' className='h-screen'>
       <div id='contact-text' className='' >
@@ -85,7 +89,7 @@ function Communication() {
             <textarea id='textarea' name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
             <div id='Button-Message'>
             <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
-            <div id='messageSent-text' className='' ref={sentText}>Message Sent</div>
+            <ReCAPTCHA sitekey="6LcQQtMnAAAAAJjQc8iIyFeAkwVM3GFPjtX7LZHz" onChange={onChange}/>
             </div>
         </form> 
       </div>
