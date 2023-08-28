@@ -9,13 +9,13 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 function Communication() {
  
-
+/** slide-in from right and left code **/
   const { ref: myTableRef, inView: myTableIsVisible } = useInView();
 
   const { ref: myIconsRef, inView: myIconsIsVisible } = useInView();
   
   
-
+/** icons links **/
   const openGithubProfile = () => {
     window.open('https://github.com/kiran021859', '_blank');
   };
@@ -24,6 +24,8 @@ function Communication() {
     window.open('https://www.linkedin.com/in/kiran-isaacs-885184265/', '_blank');
   };
 
+  /** collect and send form data to realtime database (firebase)**/
+
   const [userData, setUserData] = useState({
     Name: '', Email: '', PhoneNumber: '', MsgContent: ''
   });
@@ -31,14 +33,43 @@ function Communication() {
   const Data = (e) => {
     const name = e.target.name;
     const value = e.target.value;
+
+    if (name === "PhoneNumber" && !validationRegex.phoneNumber.test(value)) {
+      return; // Prevent updating state for invalid phone numbers
+    }
+
     setUserData({ ...userData, [name]: value });
   };
   
-  
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   const send = async (e) => {
-    const { Name, Email, PhoneNumber, MsgContent } = userData;
     e.preventDefault();
+    const { Name, Email, PhoneNumber, MsgContent } = userData;
+
+    /**validation start **/
+    if (!captchaValue) {                //capthca validation
+      alert("Please complete the CAPTCHA");
+      return;
+    }
+
+    if (!validationRegex.name.test(Name)) {         
+      alert("Invalid name format");
+      return;
+    }
+  
+    if (!validationRegex.email.test(Email)) {
+      alert("Invalid email format");
+      return;
+    }
+  
+    if (!validationRegex.phoneNumber.test(PhoneNumber)) {
+      alert("Invalid phone format");
+      return;
+    }
+
+    /*validation end*/
+
     const option = {
       method: 'POST',
       headers: {
@@ -60,21 +91,23 @@ function Communication() {
     
   };
 
-
-  const sentText = useRef(null);
-  const [isSentTextVisible, setSentTextVisible] = useState(true);
-
-  const toggleSentTextDisplay = () => {
-    const { current } = sentText;
-    current.style.display = isSentTextVisible ? 'none' : 'flex';
-    setSentTextVisible(!isSentTextVisible);
-  };
-
-  
+  /** captcha value code**/
   function onChange(value) {
     console.log("Captcha value:", value);
+    setCaptchaValue(value);
   }
   
+
+  /**validation code**/
+
+  const validationRegex = {
+    name: /^[A-Za-z\s]+$/,
+    email: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+    phoneNumber: /^(?:(?:\+|00)\d{1,3})?[0-9()\-\s]+$/,
+  };
+
+
+
 //<div id='messageSent-text' className='' ref={sentText}>Message Sent</div>
   return (
     <section id='contact' className='h-screen'>
