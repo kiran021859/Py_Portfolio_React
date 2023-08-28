@@ -73,13 +73,13 @@ function Communication() {
     const option = {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'  // Corrected content type spelling
+        'Content-Type': 'application/json'  
       },
       body: JSON.stringify({
         Name, Email, PhoneNumber, MsgContent,
       })
     };
-    const res = await fetch('https://react-js-portfolio-db-default-rtdb.firebaseio.com/laptops.json', option);  // Corrected URL spelling
+    const res = await fetch('https://react-js-portfolio-db-default-rtdb.firebaseio.com/laptops.json', option);  
     console.log(res);
 
     setUserData({
