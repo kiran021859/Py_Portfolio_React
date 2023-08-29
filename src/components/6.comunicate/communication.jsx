@@ -82,12 +82,7 @@ function Communication() {
     const res = await fetch('https://react-js-portfolio-db-default-rtdb.firebaseio.com/laptops.json', option);  
     console.log(res);
 
-    setUserData({
-      Name: '', 
-      Email: '', 
-      PhoneNumber: '', 
-      MsgContent: ''
-    });
+    
 
       /**send email code start**/
 
@@ -110,6 +105,13 @@ function Communication() {
   }
 
   /**send email code end**/
+
+  setUserData({
+    Name: '', 
+    Email: '', 
+    PhoneNumber: '', 
+    MsgContent: ''
+  });
     
   };
 
