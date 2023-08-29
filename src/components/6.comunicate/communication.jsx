@@ -94,7 +94,7 @@ function Communication() {
 
   const config = {
     SecureToken : smtpToken,
-    To : 'them@website.com',
+    To : 'kiran.isaacs@younglings.africa',
     From : "you@isp.com",
     Subject : "This is the subject",
     Body : "And this is the body", 
