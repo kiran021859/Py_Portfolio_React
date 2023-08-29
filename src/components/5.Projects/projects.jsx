@@ -11,21 +11,30 @@ import { useInView } from 'react-intersection-observer';
 
 function Projects() {
 
+  
+
   const { ref: myProjectsRef, inView: myProjectsIsVisible } = useInView();
 
- 
+  
   
   //the code on top is === to the code at the bottom
   
   /*const myRef = useRef();
+
   const [myProjectsIsVisible, setMyProjectsIsVisible] = useState();
+
   console.log('myProjectsIsVisible', myProjectsIsVisible);
+
   useEffect(() => {
+
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
       setMyProjectsIsVisible(entry.isIntersecting);
+
     })
+
     observer.observe(myRef.current)
+
   }, [] )*/
 
   

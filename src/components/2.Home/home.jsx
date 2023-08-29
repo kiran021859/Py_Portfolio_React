@@ -8,8 +8,11 @@ import CV from '../../assets/cv/CV-for-portfolio.pdf';
 
 
 
+
 function Home() {
   
+  const apiKey = import.meta.env.VITE_S3_BUCKET;
+
   
 
 

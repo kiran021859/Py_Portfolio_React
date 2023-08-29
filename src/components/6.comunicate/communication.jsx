@@ -88,6 +88,28 @@ function Communication() {
       PhoneNumber: '', 
       MsgContent: ''
     });
+
+      /**send email code start**/
+
+    const smtpName = import.meta.env.VITE_smtpjs_Username;
+    const smtpPassword = import.meta.env.VITE_smtpjs_Password;
+    const smtpHost = import.meta.env.VITE_smtpjs_Host;
+    const smtpPort = import.meta.env.VITE_smtpjs_Port;
+    const smtpToken = import.meta.env.VITE_smtpjs_Token;
+
+  const config = {
+    SecureToken : smtpToken,
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body", 
+  };
+
+  if (window.Email) {
+    window.Email.send(config);
+  }
+
+  /**send email code end**/
     
   };
 
@@ -95,6 +117,7 @@ function Communication() {
   function onChange(value) {
     console.log("Captcha value:", value);
     setCaptchaValue(value);
+    //document.cookie = "SameSite=None; Secure";
   }
   
 

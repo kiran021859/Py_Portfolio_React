@@ -3,6 +3,7 @@ import './navbar.css';
 import menu from './menu.jpg';
 import open_menu from './navbar1.js';
 
+
 //fixed flex justify-between bg-transparent
 function Navbar() {
  
@@ -11,20 +12,20 @@ function Navbar() {
 
 const [headerId, setHeaderId] = useState('header');
   
-const handleScroll = () => {
-  if (window.scrollY > 100) {
-    setHeaderId('header1');
-  } else {
-    setHeaderId('header');
-  }
-};
-
-useEffect(() => {
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setHeaderId('header1');
+    } else {
+      setHeaderId('header');
+    }
   };
-}, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
   return (
     <>  
