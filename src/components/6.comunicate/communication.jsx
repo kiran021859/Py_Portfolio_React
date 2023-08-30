@@ -6,6 +6,8 @@ import github from '../../assets/pictures/github-logo-24.png';
 import WhatsApp from '../../assets/pictures/user-regular-24.png';
 import { useInView } from 'react-intersection-observer';
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from '@emailjs/browser';
+
 
 function Communication() {
  
@@ -42,6 +44,7 @@ function Communication() {
   };
   
   const [captchaValue, setCaptchaValue] = useState(null);
+  const form = useRef();
 
   const send = async (e) => {
     e.preventDefault();
@@ -86,34 +89,45 @@ function Communication() {
 
       /**send email code start**/
 
-    const smtpName = import.meta.env.VITE_smtpjs_Username;
+    /**const smtpName = import.meta.env.VITE_smtpjs_Username;
     const smtpPassword = import.meta.env.VITE_smtpjs_Password;
     const smtpHost = import.meta.env.VITE_smtpjs_Host;
     const smtpPort = import.meta.env.VITE_smtpjs_Port;
     const smtpToken = import.meta.env.VITE_smtpjs_Token;
 
-  const config = {
-    SecureToken : smtpToken,
-    To : 'kiran.isaacs@younglings.africa',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body", 
-  };
+    const config = {
+      SecureToken : smtpToken,
+      To : 'kiranisaacs12@gmail.com',
+      From : "kiran.isaacs@youngings.africa",
+      Subject : "This is the subject",
+      Body : "And this is the body", 
+    };
+    
+    console.log(smtpToken);
+    if (window.Email) {
+      window.Email.send(config);
+    }**/
 
-  if (window.Email) {
-    window.Email.send(config);
-  }
+    
+    emailjs.sendForm('service_mhjdlpb', 'template_2rob3ny', form.current, 'rTofr_ZkYZVyFZ-4k')
+        .then((result) => {
+            console.log(result.text);
+            console.log("message sent")
+        }, (error) => {
+            console.log(error.text);
+        });
+ 
 
   /**send email code end**/
 
-  setUserData({
-    Name: '', 
-    Email: '', 
-    PhoneNumber: '', 
-    MsgContent: ''
-  });
+        setUserData({
+          Name: '', 
+          Email: '', 
+          PhoneNumber: '', 
+          MsgContent: ''
+        });
     
-  };
+  }
 
   /** captcha value code**/
   function onChange(value) {
@@ -140,7 +154,7 @@ function Communication() {
         <h1>CONTACT ME</h1>
       </div>
       <div id='' className={`contact-form${myTableIsVisible ? "-active":""}`} style={{backgroundImage: `url(${slide})`}} ref={myTableRef}>
-        <form id='form' action="" method="POST">
+        <form ref={form}id='form' action="" method="POST">
             <input id='input' type="text" name="Name" value={userData.Name} placeholder="Name:" onChange={Data}></input>
             <input id='input' type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
             <input id='input' type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
