@@ -1,12 +1,10 @@
 import React, {useEffect, useState, useRef} from 'react'
 import './communication.css'
 import slide from '../../assets/pictures/background.png';
-import linkedin from '../../assets/pictures/linkedin-logo-24.png';
-import github from '../../assets/pictures/github-logo-24.png';
-import WhatsApp from '../../assets/pictures/user-regular-24.png';
 import { useInView } from 'react-intersection-observer';
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
+import { BiLogoLinkedin, BiLogoGithub, BiUser } from "react-icons/bi";
 
 
 function Communication() {
@@ -44,6 +42,7 @@ function Communication() {
   };
   
   const [captchaValue, setCaptchaValue] = useState(null);
+
   const form = useRef();
 
   const send = async (e) => {
@@ -149,16 +148,16 @@ function Communication() {
 
 //<div id='messageSent-text' className='' ref={sentText}>Message Sent</div>
   return (
-    <section id='contact' className='h-screen'>
+    <section id='contact' className=''>
       <div id='contact-text' className='' >
         <h1>CONTACT ME</h1>
       </div>
       <div id='' className={`contact-form${myTableIsVisible ? "-active":""}`} style={{backgroundImage: `url(${slide})`}} ref={myTableRef}>
         <form ref={form}id='form' action="" method="POST">
-            <input id='input' type="text" name="Name" value={userData.Name} placeholder="Name:" onChange={Data}></input>
-            <input id='input' type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
-            <input id='input' type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
-            <textarea id='textarea' name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
+            <input className='input' type="text" name="Name" value={userData.Name} placeholder="Name:" onChange={Data}></input>
+            <input className='input' type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
+            <input className='input' type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
+            <textarea className='textarea' name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
             <div id='Button-Message'>
             <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
             <ReCAPTCHA sitekey="6LcQQtMnAAAAAJjQc8iIyFeAkwVM3GFPjtX7LZHz" onChange={onChange}/>
@@ -167,10 +166,9 @@ function Communication() {
       </div>
       <div id='icons-container' className=''>
         
-        <div className={`icons-div${myIconsIsVisible ? "-active":""}`} id='' ref={myIconsRef}>
-          <div style={{backgroundImage: `url(${linkedin})`}} className='bg-center bg-cover' id='icons' onClick={openLinkedInProfile}></div>
-          <div style={{backgroundImage: `url(${github})`}} className='bg-center bg-cover' id='icons' onClick={openGithubProfile}></div>
-          <div style={{backgroundImage: `url(${WhatsApp})`}} className='bg-center bg-no-repeat' id='icons' onClick={openGithubProfile}></div>
+        <div className={`icons-div${myIconsIsVisible ? "-active":""}`} id='inside-icons-container' ref={myIconsRef}>
+          <div className='icons' onClick={openLinkedInProfile}><BiLogoLinkedin size='20'/></div>
+          <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20'/></div>
         </div>
       </div>
     </section>

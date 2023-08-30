@@ -24,7 +24,7 @@
 .contact-form-active {
     
     border-radius: 15px;
-
+    margin: 0px 15px 0px 15px ;
     transition: 2s;
     opacity: 1;
     filter:blur(0px);
@@ -49,8 +49,8 @@
     
 }
 
-#input,
-#textarea {
+.input,
+.textarea {
     width: 100%;
     padding: 14px;
     background: white;
@@ -122,22 +122,26 @@
     border-color: black;
 }
 
-@media (max-height:620px){
-    #contact{
-        height: 630px;
-    }
-}
+
 
 
 #icons-container{
     width: 50%;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 200px;
     border-radius: 15px;
     margin-top: 5%;
     
     
+}
+
+#inside-icons-container{
+    
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+
 }
 
 .icons-div-active{
@@ -165,7 +169,10 @@
     transform: translateX(-100%);
 }
 
-#icons{
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     width: 45px;
     margin: 5px;
@@ -179,28 +186,28 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#icons:hover {
+.icons:hover {
     transform: scale(1.5);
     cursor: pointer;
 }
 
 @media (max-width:870px){
-    #icons{
+    .icons{
         margin:10px;
     }
 }
 
 @media (max-width:850px){
-    #icons{
+    .icons{
         height: 50px;
         width: 50px;
     }
 }
 
 @media (max-width:710px){
-    #icons{
+    .icons{
         height: 40px;
-        width: 50px;
+        width: 60px;
     }
 
     #icons-container{
@@ -209,9 +216,10 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        
     }
 
-    #icons-div{
+    .icons-div{
         width: 100%;
     }
 

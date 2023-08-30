@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 
@@ -18,16 +19,16 @@
     font-size: 60px;
 }
 
-#text2{
-    font-size: 1.35vw;
-}
+
 
 #text2{
-    
+    font-size: 1.35vw;
     font-family: 'Roboto Slab', serif;
-    padding-top: 10%;
     border-color: #F4A175;
+    padding: 20px 0px 20px 0px;
 }
+
+
 
 .aboutMeContent-active{
     width: 85%;
@@ -60,7 +61,7 @@
 
 @media (max-height:780px) {
     #aboutpage {
-        height: 790px;
+        height: 950px;
     }
 
 }
@@ -79,7 +80,7 @@
     }
 
     #aboutpage {
-        height: 1570px;
+        height: 1670px;
     }
 
     #text2{

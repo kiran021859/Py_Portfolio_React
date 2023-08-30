@@ -48,7 +48,7 @@ function Projects() {
 
       <div id='project-container' className={`project-container${myProjectsIsVisible ? "-active":""}`} ref={myProjectsRef}>
 
-        <div id='card' className='w-full h-full rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${python})`}}>
+        <div id='card' className='w-full  rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${python})`}}>
           <div id='hover' className='w-full h-full bg-center bg-cover' >
             <h1>High School Website</h1>
           </div>
@@ -56,7 +56,7 @@ function Projects() {
 
         <div id='card' className='w-full h-full rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${java})`}}>
           <div id='hover' className='w-full h-full bg-center bg-cover'>
-            <h1>Chat App</h1>
+            <h1>Snake Game</h1>
           </div>
         </div>
 
