@@ -108,13 +108,18 @@ function Communication() {
     }**/
 
     
-    emailjs.sendForm('service_mhjdlpb', 'template_2rob3ny', form.current, 'rTofr_ZkYZVyFZ-4k')
-        .then((result) => {
-            console.log(result.text);
-            console.log("message sent")
-        }, (error) => {
-            console.log(error.text);
-        });
+    emailjs.sendForm(
+      'service_mhjdlpb', 
+      'template_2rob3ny', 
+      form.current, 
+      'rTofr_ZkYZVyFZ-4k'
+      )
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent")
+      }, (error) => {
+          console.log(error.text);
+      });
  
 
   /**send email code end**/
@@ -153,7 +158,7 @@ function Communication() {
         <h1>CONTACT ME</h1>
       </div>
       <div id='' className={`contact-form${myTableIsVisible ? "-active":""}`} style={{backgroundImage: `url(${slide})`}} ref={myTableRef}>
-        <form ref={form}id='form' action="" method="POST">
+        <form ref={form} id='form' action="" method="POST">
             <input className='input' type="text" name="Name" value={userData.Name} placeholder="Name:" onChange={Data}></input>
             <input className='input' type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
             <input className='input' type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
