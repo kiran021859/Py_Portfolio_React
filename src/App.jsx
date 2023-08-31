@@ -7,6 +7,7 @@ import Skills from './components/4.Skills/skills'
 import Projects from './components/5.Projects/projects'
 import Communicate from './components/6.comunicate/communication'
 import Footer from './components/7.Footer/footer.jsx'
+//import CommonParentComponent from './components/CommonParentComponent';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Projects/>
       <Communicate/>
       <Footer/>
+      
       
     </>
     

@@ -7,7 +7,7 @@ import open_menu from './navbar1.js';
 //fixed flex justify-between bg-transparent
 function Navbar() {
  
-
+//console.log('navbar is revcieving about page:', myAboutIsVisible)
   
 
 const [headerId, setHeaderId] = useState('header');

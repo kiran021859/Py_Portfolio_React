@@ -13,7 +13,7 @@ function Projects() {
 
   
 
-  const { ref: myProjectsRef, inView: myProjectsIsVisible } = useInView();
+ // const { ref: myProjectsRef, inView: myProjectsIsVisible } = useInView();
 
   const openSchoolWebsite = () => {
     window.open('https://glittery-chebakia-1e38c0.netlify.app/', '_blank');
@@ -31,7 +31,7 @@ function Projects() {
   
   //the code on top is === to the code at the bottom
   
-  /*const myRef = useRef();
+  const myProjectsRef = useRef();
 
   const [myProjectsIsVisible, setMyProjectsIsVisible] = useState();
 
@@ -45,9 +45,11 @@ function Projects() {
 
     })
 
-    observer.observe(myRef.current)
+    observer.observe(myProjectsRef.current)
 
-  }, [] )*/
+  }, [] )
+
+ 
 
   
 
