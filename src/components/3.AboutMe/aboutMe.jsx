@@ -14,7 +14,7 @@ import { useInView } from 'react-intersection-observer';
 function AboutMe() {
 
   const { ref: myAboutRef, inView: myAboutIsVisible } = useInView();
-  console.log(myAboutIsVisible);
+  console.log(myAboutIsVisible)
 
   const slides = [
     {url: me},
