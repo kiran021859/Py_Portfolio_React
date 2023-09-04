@@ -1,9 +1,11 @@
 import React, {useContext, useRef, useState, useEffect} from 'react'
-
+import { useInView } from 'react-intersection-observer';
 
 
 export const SlideContext = React.createContext();
 export const SlideRefContext = React.createContext();
+export const AboutContext = React.createContext();
+export const AboutRefContext = React.createContext();
 
 export function useSlide(){
     return useContext(SlideContext);
@@ -12,6 +14,20 @@ export function useSlide(){
 export function useSlideRef(){
     return useContext(SlideRefContext);
 };
+
+
+
+
+export function useAbout(){
+    return useContext(AboutContext);
+};
+
+export function useAboutRef(){
+    return useContext(AboutRefContext);
+};
+
+
+
   
   export function SlideProvider({children}) {
 
@@ -27,12 +43,20 @@ export function useSlideRef(){
       observer.observe(mySlideRef.current)
     }, [] );
 
+    const { ref: myAboutRef, inView: myAboutIsVisible } = useInView();
+
 
     return (
       <>
       <SlideContext.Provider value={isVisible}>
         <SlideRefContext.Provider value={mySlideRef}>
-            {children}
+
+            <AboutRefContext.Provider value={myAboutRef}>
+                <AboutContext.Provider value={myAboutIsVisible}>
+                    {children}
+                </AboutContext.Provider>
+            </AboutRefContext.Provider>
+
         </SlideRefContext.Provider>    
       </SlideContext.Provider>  
       

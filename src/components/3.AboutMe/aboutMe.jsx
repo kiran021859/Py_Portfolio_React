@@ -7,14 +7,15 @@ import background from '../../assets/pictures/background.png';
 //import rightArrow from './pictures/right-arrow-solid-24.png';
 //import leftArrow from './pictures/left-arrow-solid-24.png';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
-import { useInView } from 'react-intersection-observer';
+//import { useInView } from 'react-intersection-observer';
+import {useAbout, useAboutRef } from '../GlobalCode';
 
 
 export default function AboutMe() {
 
   
 
-  const { ref: myAboutRef, inView: myAboutIsVisible } = useInView();
+ 
   
 
   const slides = [
@@ -39,7 +40,8 @@ export default function AboutMe() {
   }
 
   
-
+  const myAboutRef = useAboutRef();
+  const myAboutIsVisible = useAbout();
   
 
 
