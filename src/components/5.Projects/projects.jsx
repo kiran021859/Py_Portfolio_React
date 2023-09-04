@@ -7,7 +7,7 @@ import website from '../../assets/pictures/school_website.png';
 import snake from '../../assets/pictures/snake_1.png';
 import battleShips from '../../assets/pictures/battleship_game.png';
 //import { useInView } from 'react-intersection-observer';
-import { useSlide, useSlideRef } from '../GlobalCode';
+import { useProjects, useProjectsRef } from '../GlobalCode';
 
 
 function Projects() {
@@ -51,8 +51,8 @@ function Projects() {
   }, [] )**/
 
  
-const myProjectsRef = useSlideRef();
-const myProjectsIsVisible = useSlide();
+const myProjectsRef = useProjectsRef();
+const myProjectsIsVisible = useProjects();
   
 
   return (

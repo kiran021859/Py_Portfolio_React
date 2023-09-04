@@ -6,14 +6,14 @@ import javascript from '../../assets/pictures/javascript.png';
 import python from '../../assets/pictures/python.png';
 import java from '../../assets/pictures/java.png';
 import sql from '../../assets/pictures/sql.png';
-import { useSlide, useSlideRef } from '../GlobalCode';
+import { useSkills, useSkillsRef } from '../GlobalCode';
 
 {/**grid grid-cols-4 gap-4**/}
 {/**w-full h-full rounded-2xl bg-center bg-cover**/}
 function Skills() {
 
-  const mySkillsRef = useSlideRef();
-  const mySkillsIsVisible = useSlide();
+  const mySkillsRef = useSkillsRef();
+  const mySkillsIsVisible = useSkills();
 
   return (
     

@@ -5,14 +5,14 @@ import { useInView } from 'react-intersection-observer';
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
 import { BiLogoLinkedin, BiLogoGithub, BiUser } from "react-icons/bi";
+import { useForm, useFromRef } from '../GlobalCode';
+import { useIcons, useIconsRef } from '../GlobalCode';
 
 
 function Communication() {
  
-/** slide-in from right and left code **/
-  const { ref: myTableRef, inView: myTableIsVisible } = useInView();
 
-  const { ref: myIconsRef, inView: myIconsIsVisible } = useInView();
+  
   
   
 /** icons links **/
@@ -148,6 +148,17 @@ function Communication() {
     email: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
     phoneNumber: /^(?:(?:\+|00)\d{1,3})?[0-9()\-\s]+$/,
   };
+
+/** slide-in from right and left code **/
+
+  const myTableRef = useFromRef();
+  const myTableIsVisible = useForm();
+
+  const myIconsRef = useIconsRef();
+  const myIconsIsVisible = useIcons();
+
+
+
 
 
 
