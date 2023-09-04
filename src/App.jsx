@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './App.css'
 import Navbar from './components/1.Navbar/navbar'
 import Home from './components/2.Home/home'
@@ -7,6 +7,8 @@ import Skills from './components/4.Skills/skills'
 import Projects from './components/5.Projects/projects'
 import Communicate from './components/6.comunicate/communication'
 import Footer from './components/7.Footer/footer.jsx'
+import { SlideProvider } from './components/GlobalCode'
+
 //import CommonParentComponent from './components/CommonParentComponent';
 
 
@@ -15,8 +17,10 @@ import Footer from './components/7.Footer/footer.jsx'
 function App() {
   
   
+
   return (
     <>
+    <SlideProvider>
       <Navbar/>
       <Home/>
       <Aboutme/>
@@ -24,7 +28,7 @@ function App() {
       <Projects/>
       <Communicate/>
       <Footer/>
-      
+    </SlideProvider>
       
     </>
     

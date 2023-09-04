@@ -1,13 +1,15 @@
-import React, { useState, useEffect, } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './navbar.css';
 import menu from './menu.jpg';
 import open_menu from './navbar1.js';
 
 
 //fixed flex justify-between bg-transparent
-function Navbar({}) {
+export default function Navbar({}) {
  
 //console.log('navbar is revcieving about page:', myAboutIsVisible)
+
+
   
 
 const [headerId, setHeaderId] = useState('header');
@@ -55,5 +57,3 @@ const [headerId, setHeaderId] = useState('header');
     </>  
   )
 }
-
-export default Navbar

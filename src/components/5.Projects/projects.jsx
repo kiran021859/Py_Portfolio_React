@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, {useEffect, useRef, useState, useContext} from 'react'
 import './projects.css'
 //import html from './pictures/html.png';
 //import css from './pictures/css.png';
@@ -6,7 +6,8 @@ import slide from '../../assets/pictures/background.png';
 import website from '../../assets/pictures/school_website.png';
 import snake from '../../assets/pictures/snake_1.png';
 import battleShips from '../../assets/pictures/battleship_game.png';
-import { useInView } from 'react-intersection-observer';
+//import { useInView } from 'react-intersection-observer';
+import { useSlide, useSlideRef } from '../GlobalCode';
 
 
 function Projects() {
@@ -31,7 +32,7 @@ function Projects() {
   
   //the code on top is === to the code at the bottom
   
-  const myProjectsRef = useRef();
+  /**const myProjectsRef = useRef();
 
   const [myProjectsIsVisible, setMyProjectsIsVisible] = useState();
 
@@ -47,10 +48,11 @@ function Projects() {
 
     observer.observe(myProjectsRef.current)
 
-  }, [] )
+  }, [] )**/
 
  
-
+const myProjectsRef = useSlideRef();
+const myProjectsIsVisible = useSlide();
   
 
   return (
