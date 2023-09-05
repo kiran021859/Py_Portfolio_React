@@ -26,7 +26,7 @@
     
     border-radius: 15px;
     margin: 0px 15px 0px 15px ;
-    transition: 2s;
+    transition: .45s;
     opacity: 1;
     filter:blur(0px);
     transform: translateX(0%);
@@ -34,10 +34,10 @@
 }
 .contact-form {
     border-radius: 15px;
-    transition: 2s;
+    transition: .45s;
     opacity: 0;
     filter:blur(5px);
-    transform: translateX(100%);
+    transform: translateX(10%);
 }
 
 
@@ -76,24 +76,6 @@
     display: flex;
     justify-content: space-around;
     
-}
-#messageSent-text{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-    
-    width: 250px;
-    height: 45px;
-    font-size: 25px;
-    color: balck;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    border: solid;
-    border-radius: 50px;
-    border-color: black;
-    border-width: 1px;
-    margin-bottom: 6px;
 }
 
 #submit {
@@ -145,29 +127,12 @@
 
 }
 
-.icons-div-active{
-    display: flex;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-
-    transition: 2s;
-    opacity: 1;
-    filter:blur(0px);
-    transform: translateX(0%);
-}
-
 
 .icons-div{
     display: flex;
     width: 50%;
     display: flex;
     justify-content: space-between;
-
-    transition: 2s;
-    opacity: 1;
-    filter:blur(5px);
-    transform: translateX(-100%);
 }
 
 .icons{
