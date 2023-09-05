@@ -1,5 +1,5 @@
 #projects{
-    background-image: linear-gradient(rgba(214, 208, 200, 1), grey );
+    background-image: linear-gradient(rgba(214, 208, 200, 1), rgba(235, 232, 226, 1) );
     transition: all .45s ease;
     overflow-y: hidden;
     flex-direction: column;

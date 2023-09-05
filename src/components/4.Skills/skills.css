@@ -1,5 +1,5 @@
 #skillsPage{
-    background-image: linear-gradient(grey , rgba(214, 208, 200, 1));
+    background-image: linear-gradient(rgba(235, 232, 226, 1) , rgba(214, 208, 200, 1));
     display: flex;
     justify-content: center;
     align-items: center;

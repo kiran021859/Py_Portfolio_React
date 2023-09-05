@@ -10,7 +10,6 @@
     z-index: 1000;
     align-items: center;
     padding: 20px 15%;
-    transition: all .01s ease;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -20,6 +19,7 @@
     border-left-style: none;
     border-width: 3px;
     border-color: transparent;
+    transition: all .45s ease-in-out;
 }
 
 #header1 {
@@ -31,7 +31,6 @@
     z-index: 1000;
     align-items: center;
     padding: 20px 15%;
-    transition: all .45s ease;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -41,8 +40,9 @@
     border-bottom-style: solid;
     border-left-style: none;
     border-width: 3px;
-    border-color: #F4A175;
+    border-color: transparent;
     border-image: url('../../assets/pictures/footer2.png') 30 round;
+    transition: all .45s ease-in-out;
 }
 
 .logo {
@@ -58,6 +58,7 @@
 
 .navlist {
     display: flex;
+    
 
 }
 
@@ -66,10 +67,10 @@
     font-size: 2vw;
     font-weight: 600;
     margin: 0 25px;
-    transition: all .45s ease;
     
-
 }
+
+
 
 /*.navlist a:hover{
     color:;
@@ -89,10 +90,6 @@
     cursor: pointer;
     margin-left: 25px;
     display: none;
-
-}.home-active{
-    border-bottom:7px solid #F4A175;
-    border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
 #nav-icon:hover{
     transform: scale(1.2);
@@ -106,27 +103,43 @@
 
 
 .home-active{
-    border-bottom:7px solid #F4A175;
+    border-bottom:5px solid rgba(214, 208, 200, 1);
     border-image: url('../../assets/pictures/footer2.png') 30 round;
+}
+
+.about{
+    border-bottom:5px solid transparent;
 }
 
 .about-active{
-    border-bottom:7px solid #F4A175;
+    border-bottom:5px solid rgba(214, 208, 200, 1);
     border-image: url('../../assets/pictures/footer2.png') 30 round;
+}
+
+.skills{
+    border-bottom:5px solid transparent;
 }
 
 .skills-active{
-    border-bottom:7px solid #F4A175;
+    border-bottom:5px solid rgba(214, 208, 200, 1);
     border-image: url('../../assets/pictures/footer2.png') 30 round;
+}
+
+.projects{
+    border-bottom:5px solid transparent;
 }
 
 .projects-active{
-    border-bottom:7px solid #F4A175;
+    border-bottom:5px solid rgba(214, 208, 200, 1);
     border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
 
+.communication{
+    border-bottom:5px solid transparent;
+}
+
 .communication-active{
-    border-bottom:7px solid #F4A175;
+    border-bottom:5px solid rgba(214, 208, 200, 1);
     border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
 
@@ -161,7 +174,7 @@
         align-items: center;
         
         text-align: left;
-        transition: all .45s ease;
+        
         
     }
     .navlist li{
@@ -178,14 +191,14 @@
         display: block;
         margin: 17px;
         font-size: 20px;
-        transition: all .45s ease;
+    
         color: #F4A175;
         
         
     }
 
     .navlist a:hover {
-        transition: all .45s ease;
+        
         
         width: auto;
         height: auto;
