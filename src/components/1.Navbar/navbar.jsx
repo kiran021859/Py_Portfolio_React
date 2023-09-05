@@ -3,7 +3,7 @@ import './navbar.css';
 import menu from './menu.jpg';
 import open_menu from './navbar1.js';
 import {useAbout, useSkills, useProjects, useForm} from './../GlobalCode'
-
+import Background from '../../assets/pictures/footer2.png';
 
 //fixed flex justify-between bg-transparent
 export default function Navbar({}) {
@@ -57,11 +57,11 @@ const [headerId, setHeaderId] = useState('header');
 
             <div className="nav-list">
               <ul className="navlist">
-                  <li className='home'><a href="#homepage">Home</a></li>
-                  <li><a href="#aboutpage">About</a></li>
-                  <li><a href="#skillsPage">Skills</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#homepage">Home</a></li>
+                  <li className={`about${aboutIsVisible ? "-active":""}`} ><a href="#aboutpage">About</a></li>
+                  <li className={`skills${skillsIsVisible ? "-active":""}`} ><a href="#skillsPage">Skills</a></li>
+                  <li className={`projects${projectsIsVisible ? "-active":""}`} ><a href="#projects">Projects</a></li>
+                  <li className={`communication${formIsVisible ? "-active":""}`} ><a href="#contact">Contact</a></li>
               </ul>
             </div>
 

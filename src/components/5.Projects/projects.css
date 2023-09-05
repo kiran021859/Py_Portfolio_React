@@ -16,6 +16,7 @@
     border-left-style: none;
     border-width: 3px;
     border-color: #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
 
 

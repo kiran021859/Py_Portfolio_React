@@ -25,6 +25,7 @@
     font-size: 1.35vw;
     font-family: 'Roboto Slab', serif;
     border-color: #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
     padding: 20px 0px 20px 0px;
 }
 

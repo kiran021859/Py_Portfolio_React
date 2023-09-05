@@ -10,7 +10,7 @@
     z-index: 1000;
     align-items: center;
     padding: 20px 15%;
-    transition: all .45s ease;
+    transition: all .01s ease;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -42,6 +42,7 @@
     border-left-style: none;
     border-width: 3px;
     border-color: #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
 
 .logo {
@@ -89,8 +90,10 @@
     margin-left: 25px;
     display: none;
 
+}.home-active{
+    border-bottom:7px solid #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
-
 #nav-icon:hover{
     transform: scale(1.2);
 }
@@ -100,11 +103,32 @@
 
 }
 
-.home{
-    color: green;
+
+
+.home-active{
+    border-bottom:7px solid #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
 
+.about-active{
+    border-bottom:7px solid #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
+}
 
+.skills-active{
+    border-bottom:7px solid #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
+}
+
+.projects-active{
+    border-bottom:7px solid #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
+}
+
+.communication-active{
+    border-bottom:7px solid #F4A175;
+    border-image: url('../../assets/pictures/footer2.png') 30 round;
+}
 
 
 
