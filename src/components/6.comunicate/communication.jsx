@@ -185,10 +185,10 @@ function Communication() {
         
         <div className={`icons-div${myIconsIsVisible ? "-active":""}`} id='inside-icons-container' ref={myIconsRef}>
           <div className='icons' onClick={openLinkedInProfile}><BiLogoLinkedin size='20'/></div>
-          <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20'/></div>
           <a href={CV} target="_blank" rel="noopener noreferrer">
             <div className='icons'>CV</div>
           </a>
+          <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20'/></div>
         </div>
       </div>
     </section>
