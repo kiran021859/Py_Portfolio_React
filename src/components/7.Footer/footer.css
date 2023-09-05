@@ -1,9 +1,23 @@
-#footer{
+.footer{
+    display: none;
+    transition: all .45s ease-in-out;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/pictures/footer2.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
     height:60px;
     position: sticky;
     bottom:0px;
-   
+    
 }
+
+
 
 #footer-button{
     height: 80%;

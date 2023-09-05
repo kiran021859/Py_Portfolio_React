@@ -11,10 +11,10 @@
 
 #homepage {
     display: grid;
-    grid-template-columns: 50% 50%;
     padding-top: 10%;
     background-size: cover;
-    background-image: linear-gradient(#FBA87C,black);
+    background-image: url('../../assets/pictures/Unsplash.png');
+    background-repeat: no-repeat;
    
 }
 
@@ -38,51 +38,6 @@
     margin-bottom: 30px;
 }
 
-#button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    
-    width: 60%;
-    height: 45px;
-    font-size: 25px;
-    color: #F4A175;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    border: solid;
-    border-radius: 50px;
-    border-color: #F4A175;
-    border-width: 1px;
-    cursor: pointer;
-}
-
-#block2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#Home-Picture{
-    height:80%;
-    width: 90%;
-    border: solid;
-    border-radius: 50%;
-    border-color: rgba(101, 67, 32, 1);
-    border-width: 5px;
-}
-
-#Home-Picture:hover{
-    transform: scale(1.1);
-}
-
-#button:hover{
-    transform: scale(1.1);
-    background-color: #F4A175;
-    color: black;
-    border-color: black;
-}
-
 
 
 /******************max-height************************/
@@ -97,13 +52,7 @@
 }
 
 @media (min-width:1025px){
-    #button {
-        
-        
-        width: 40%;
-        height: 5%;
-        font-size: 2.5vh;
-    }
+    
 
     #home-text {
         font-size: 5vw;
@@ -114,11 +63,7 @@
 @media (max-width:850px){
    
     #homepage {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        padding-top: 10%;
-        height: 1200px;
+        
        
     }
 

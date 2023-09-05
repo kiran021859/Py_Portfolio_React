@@ -15,13 +15,6 @@ const projectsIsVisible = useProjects();
 const formIsVisible = useForm();
 
 
-  console.log(
-    "about:",aboutIsVisible,"\n",
-    "Skills:",skillsIsVisible,"\n",
-    "Projects:",projectsIsVisible,"\n",
-    "Form:",formIsVisible,"\n",
-    
-  );
 
 const [headerId, setHeaderId] = useState('header');
   
