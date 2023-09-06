@@ -175,10 +175,9 @@ function Communication() {
             <input className='input' type="email" name="Email" value={userData.Email} placeholder="Email:" onChange={Data}></input>
             <input className='input' type="number" name="PhoneNumber" value={userData.PhoneNumber} placeholder="Mobile Number:" onChange={Data} ></input>
             <textarea className='textarea' name="MsgContent" value={userData.MsgContent} cols="35" rows="10" placeholder="How Can I Help You:" onChange={Data} ></textarea>
-            <div id='Button-Message'>
-            <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
             <ReCAPTCHA sitekey="6LcQQtMnAAAAAJjQc8iIyFeAkwVM3GFPjtX7LZHz" onChange={onChange}/>
-            </div>
+            <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
+            
         </form> 
       </div>
       <div id='icons-container' className=''>
