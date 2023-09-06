@@ -25,7 +25,7 @@ function Skills() {
       
       <div className={`skills-container${mySkillsIsVisible ? "-active":""}`} ref={mySkillsRef}>
 
-        <div id='container' className='max-w-[1400px]  relative grid '  >
+        <div id='container' className='relative grid '  >
           
           <div id='box' className=''> 
             <div id='square' className='B1 w-full h-full rounded-2xl bg-center bg-cover' style={{backgroundImage: `url(${javascript})`}}>
