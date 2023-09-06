@@ -66,28 +66,83 @@
 }
 
 #hover{
-    height: 0;
+    /**height: 0;
     background-image: linear-gradient(#F4A175, black );
     text-align: center;
     color: white;
     display: flexs;
     justify-content: center;
     border-radius: 15px;
-    cursor: pointer;
+    cursor: pointer; **/
 }
 
 #hover h1{
     margin-top: 20%;
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+#text1{
+    left: 65%;
+    top: 30%;
+}
+
+#text2{
+    left: 76%;
+    top: 30%;
+}
+
+#text3{
+    left: 70%;
+    top: 30%;
 }
 
 #card:hover #hover{
-    height: 35%;
-    transition: all .45s ease;
+    height: 50%;
+    /*transition: all .45s ease;
     
-    
+    */
 }
+
+
+
+
+#hover {
+  
+  height: 0;
+  position: absolute;
+  
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #F4A175 0%, black 100%);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#wave {
+  width: 800px;
+  height: 825px;
+  position: absolute;
+  top: -95%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 35%;
+  background: rgba(214, 208, 200, 1);
+  animation: wave 15s infinite linear;
+  z-index: 9;
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg);}
+  from { transform: rotate(360deg);}
+}
+
+
 
 @media (max-width: 970px) {
     
@@ -107,6 +162,13 @@
     #projects{
         height: auto;
         
+    }
+
+
+    #wave {
+        
+        top: -135%;
+        left: 50%;
     }
 }
 

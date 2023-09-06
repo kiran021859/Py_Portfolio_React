@@ -66,19 +66,22 @@ const myProjectsIsVisible = useProjects();
 
         <div id='card' className='w-full  rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${website})`}}>
           <div id='hover' className='w-full h-full bg-center bg-cover' onClick={openSchoolWebsite}>
-            <h1>High School Website</h1>
+          <div id='wave'></div>
+            <h1 id='text1'>High School Website</h1>
           </div>
         </div>
 
         <div id='card' className='w-full h-full rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${snake})`}}>
           <div id='hover' className='w-full h-full bg-center bg-cover' onClick={openSnakeGame}>
-            <h1>Snake Game</h1>
+          <div id='wave'></div>
+            <h1 id='text2'>Snake Game</h1>
           </div>
         </div>
 
         <div id='card' className='w-full h-full rounded-2xl bg-center bg-cover flex items-end' style={{backgroundImage: `url(${battleShips})`}}>
           <div id='hover' className='w-full h-full bg-center bg-cover' onClick={openBattleGame}>
-            <h1>Battleships Game</h1>
+          <div id='wave'></div>
+          <h1 id='text3'>Battleships Game</h1>
           </div>
         </div>
 
