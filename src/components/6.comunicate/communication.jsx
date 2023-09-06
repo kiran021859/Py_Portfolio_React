@@ -1,13 +1,13 @@
 import React, {useEffect, useState, useRef} from 'react'
 import './communication.css'
 import slide from '../../assets/pictures/background.png';
-import { useInView } from 'react-intersection-observer';
+
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
-import { BiLogoLinkedin, BiLogoGithub, BiUser } from "react-icons/bi";
+
 import { useForm, useFromRef } from '../GlobalCode';
-import { useIcons, useIconsRef } from '../GlobalCode';
-import CV from '../../assets/cv/CV-for-portfolio.pdf';
+
+
 
 
 function Communication() {
@@ -16,14 +16,7 @@ function Communication() {
   
   
   
-/** icons links **/
-  const openGithubProfile = () => {
-    window.open('https://github.com/kiran021859', '_blank');
-  };
 
-  const openLinkedInProfile = () => {
-    window.open('https://www.linkedin.com/in/kiran-isaacs-885184265/', '_blank');
-  };
 
   /** collect and send form data to realtime database (firebase)**/
 
@@ -155,8 +148,7 @@ function Communication() {
   const myTableRef = useFromRef();
   const myTableIsVisible = useForm();
 
-  const myIconsRef = useIconsRef();
-  const myIconsIsVisible = useIcons();
+  
 
 
 
@@ -179,16 +171,6 @@ function Communication() {
             <button type="submit" value="Send Message" id="submit" onClick={send}>Submit</button>
             
         </form> 
-      </div>
-      <div id='icons-container' className=''>
-        
-        <div className='icons-div' id='inside-icons-container' ref={myIconsRef}>
-          <div className='icons' onClick={openLinkedInProfile}><BiLogoLinkedin size='20'/></div>
-          <a href={CV} target="_blank" rel="noopener noreferrer">
-            <div className='icons'>CV</div>
-          </a>
-          <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20'/></div>
-        </div>
       </div>
     </section>
   )
