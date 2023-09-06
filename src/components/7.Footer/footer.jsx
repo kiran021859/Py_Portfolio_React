@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './footer.css';
 import Background from '../../assets/pictures/footer2.png';
-
+import {AiOutlineArrowUp} from 'react-icons/ai'
 
 
 function Footer() {
@@ -27,7 +27,7 @@ function Footer() {
 
   return (
     <div className={footerId}>
-      <a className='' id='footer-button' href="#homepage">GO TO HOME</a>
+      <a className='' id='footer-button' href="#homepage"><AiOutlineArrowUp size='30'/></a>
     </div>
   )
 }
