@@ -4,7 +4,7 @@ import slide from '../../assets/pictures/background.png';
 
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from '@emailjs/browser';
-
+import Footer from './../7.Footer/footer.jsx'
 import { useForm, useFromRef } from '../GlobalCode';
 
 
@@ -157,6 +157,7 @@ function Communication() {
 
 //<div id='messageSent-text' className='' ref={sentText}>Message Sent</div>
   return (
+    <>
     <section id='contact' className=''>
       <div id='contact-text' className='' >
         <h1>CONTACT ME</h1>
@@ -172,7 +173,10 @@ function Communication() {
             
         </form> 
       </div>
+      
     </section>
+    <Footer/>
+    </>
   )
 }
 

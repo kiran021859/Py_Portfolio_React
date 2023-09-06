@@ -26,9 +26,13 @@ function Footer() {
   
 
   return (
-    <div className={footerId}>
-      <a className='' id='footer-button' href="#homepage"><AiOutlineArrowUp size='30'/></a>
-    </div>
+    <>
+      
+        <div className={footerId}>
+          <a className='' id='footer-button' href="#homepage"><AiOutlineArrowUp size='30'/></a>
+        </div>
+      
+    </>
   )
 }
 
