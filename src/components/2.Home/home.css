@@ -51,7 +51,7 @@
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
     background-size: cover;
     color: transparent;
-    -moz-background-clip: text;
+   
     -webkit-background-clip: text;
     text-transform: uppercase;
     margin: 10px 0;

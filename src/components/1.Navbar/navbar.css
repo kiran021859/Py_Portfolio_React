@@ -2,14 +2,13 @@
 
 #header {
     
-    
-    height: 10%;
+    width: 100%;
+    height: 90px;
     top: 0;
-    
     right: 0;
     z-index: 1000;
     align-items: center;
-    padding: 20px 15%;
+    padding: 20px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -18,18 +17,18 @@
     border-bottom-style: solid;
     border-left-style: none;
     border-width: 3px;
-    border-color: transparent;
+    border-color: transparent;  
 }
 
 #header1 {
     
     width: 100%;
-    height: 10%;
+    height: 90px;
     top: 0;
     right: 0;
     z-index: 1000;
     align-items: center;
-    padding: 20px 15%;
+    padding: 20px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -65,7 +64,13 @@
     
     font-size: 2vw;
     font-weight: 600;
-    margin: 0 25px;
+    color: balck;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
     
 }
 
@@ -100,7 +105,7 @@
 }
 
 
-
+/*********************
 .home-active{
     border-bottom:5px solid rgba(214, 208, 200, 1);
     border-image: url('../../assets/pictures/footer2.png') 30 round;
@@ -142,7 +147,7 @@
     border-image: url('../../assets/pictures/footer2.png') 30 round;
 }
 
-
+*********************/
 
 @media (min-width: 840px ) {
     .navlist.open {
@@ -155,6 +160,32 @@
 }
 
 @media (max-width: 840px) {
+
+
+    .home-active{
+        border-image: none;
+        border-bottom:none;
+    }
+
+    .about-active{
+        border-image: none;
+        border-bottom:none;
+    }
+
+    .skills-active{
+        border-image: none;
+        border-bottom:none;
+    }
+
+    .projects-active{
+        border-image: none;
+        border-bottom:none;
+    }
+
+    .communication-active{
+        border-image: none;
+        border-bottom:none;
+    }
 
     #nav-icon{
         display: block;
@@ -176,22 +207,15 @@
         
         
     }
-    .navlist li{
-       
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+    
 
-    }
 
     .navlist a {
         display: block;
         margin: 17px;
         font-size: 20px;
-    
-        color: #F4A175;
+        
+        color: black;
         
         
     }
@@ -203,23 +227,17 @@
         height: auto;
         
     }
-    .navlist li:hover{
-        background-color: #F4A175;
-        
-    }
+    
 
-    .navlist li:hover a{
-        color: black;
-        
-    }
+    
  
     .navlist a.active {
-        color: var(--text-color);
+        color: green;
     }
 
     .navlist.open {
         top: 100%;
-        background-color: black;
+        background-color: burlywood;
     }
 
     .logo {
@@ -235,3 +253,51 @@
         justify-content: space-around;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+div.navlist a:before,
+div.navlist a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+    background-color: black;
+}
+
+div.navlist a:before {
+    left: 0px;
+    top: 0px;
+}
+
+div.navlist a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+div.navlist a:hover:before,
+div.navlist a:hover:after {
+    opacity: 1;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+

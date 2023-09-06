@@ -48,15 +48,15 @@ const [headerId, setHeaderId] = useState('header');
               <a href="#" className="logo">Kir<span>a</span>n.</a>
             </div>
 
-            <div className="nav-list">
-              <ul className="navlist">
-                  <li><a href="#homepage">Home</a></li>
-                  <li className={`about${aboutIsVisible ? "-active":""}`} ><a href="#aboutpage">About</a></li>
-                  <li className={`skills${skillsIsVisible ? "-active":""}`} ><a href="#skillsPage">Skills</a></li>
-                  <li className={`projects${projectsIsVisible ? "-active":""}`} ><a href="#projects">Projects</a></li>
-                  <li className={`communication${formIsVisible ? "-active":""}`} ><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
+            
+              <div className="navlist">
+                  <a href="#homepage">Home</a>
+                  <a href="#aboutpage">About</a>
+                  <a href="#skillsPage">Skills</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#contact">Contact</a>
+              </div>
+            
 
             <div className="" id='nav-icon' onClick={open_menu}>
               <img src={menu} alt="Nav_bar"/>
