@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-color: rgba(214, 208, 200, 1);
+}

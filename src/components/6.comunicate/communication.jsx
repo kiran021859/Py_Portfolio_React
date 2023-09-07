@@ -173,9 +173,9 @@ function Communication() {
             
         </form> 
       </div>
-      
+     
     </section>
-    <Footer/>
+    
     </>
   )
 }

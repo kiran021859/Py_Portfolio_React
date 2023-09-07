@@ -1,6 +1,7 @@
 .footer{
     display: none;
     transition: all .45s ease-in-out;
+    position: sticky;
 }
 
 .footer1{
@@ -39,4 +40,5 @@
 .footer1:hover {
     transform: scale(1.25);
 }
+
 

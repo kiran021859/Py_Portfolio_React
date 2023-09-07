@@ -6,6 +6,7 @@
     align-items: center;
     overflow-y: hidden;
     height: 100%;
+    padding-bottom: 10%;
     
 }
 
@@ -108,7 +109,6 @@
     color: black;
     border-color: black;
 }
-
 
 
 
