@@ -57,9 +57,9 @@ export default function AboutMe() {
 
   return (
     <>
-        <section className='h-screen'  id="aboutpage">
+        <section className=''  id="aboutpage">
           <div className={`aboutMeContent${myAboutIsVisible ? "-active":""}`} ref={myAboutRef} > 
-            <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative' id="slidesShow">
+            <div className='' id="slidesShow">
 
               <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 group' id='insideSlideShow'>
                 <div className='hidden group-hover:block absolute left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' id='leftButton'>
@@ -72,7 +72,7 @@ export default function AboutMe() {
               </div>
             </div>
             
-            <div className='flex flex-col  max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative ' id='aboutMeText'>
+            <div className='' id='aboutMeText'>
               <div id='text1' className='text-center'>
                 <h1>ABOUT ME</h1>
               </div>

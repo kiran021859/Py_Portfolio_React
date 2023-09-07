@@ -1,16 +1,39 @@
 #aboutpage {
-    background-image: linear-gradient(rgba(214, 208, 200, 1),rgba(235, 232, 226, 1));
+    /*background-image: linear-gradient(rgba(214, 208, 200, 1),rgba(235, 232, 226, 1));*/
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
+    
+    background-color: green;
 }
 
+#slidesShow{
+    background-color: blue;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    padding: 16px 4px 16px 4px;
 
+
+}
+
+#aboutMeText{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 100%;
+    position: relative;
+    padding: 16px 4px 16px 4px;
+    background-color: #F4A175;
+}
 
 #insideSlideShow {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 #text1{
@@ -22,26 +45,25 @@
 
 
 #text2{
-    font-size: 1.35vw;
+    font-size: 1.3vw;
     font-family: 'Roboto Slab', serif;
     border-color: #F4A175;
     border-image: url('../../assets/pictures/footer2.png') 30 round;
     padding: 20px 0px 20px 0px;
+    
 }
 
 
 
 .aboutMeContent-active{
     width: 85%;
-    
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding-top: 2%;
-
-    transition: .45s;
-    opacity: 1;
-    filter:blur(0px);
-    transform: translateX(0%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 0;
+    background-color: aqua;
    
 }
 
@@ -50,12 +72,8 @@
     
     display: grid;
     grid-template-columns: 50% 50%;
-    padding-top: 2%;
-
-    transition: .45s;
-    opacity: 0;
-    filter:blur(5px);
-    transform: translateX(-10%);
+    padding-top: 10%;
+    margin: 0;
 }
 
 
@@ -128,7 +146,7 @@
 
 @media (max-height:780px) {
     #aboutpage {
-        height: 950px;
+        height: auto;
     }
 
 }
@@ -154,15 +172,17 @@
     .aboutMeContent-active{
         
         grid-template-columns: 100%;
+        grid-template-rows: 50% 40%;
     }
 
     .aboutMeContent{
         
         grid-template-columns: 100%;
+        grid-template-rows: 50% 40%;
     }
 
     #aboutpage {
-        height: 1670px;
+        height: 1270px;
     }
 
     #text2{
@@ -175,6 +195,10 @@
     #text2{
         font-size: 3vw;
     }
+
+    #aboutpage {
+        height: 1370px;
+    }
 }
 
 @media (max-width:425px) {
@@ -183,9 +207,10 @@
     }
 }
 
-@media (min-width: 1025px) {
-    #slideshow{
-        height: 80%;
+@media (min-width: 1270px) {
+    #aboutpage {
+        /*background-image: linear-gradient(rgba(214, 208, 200, 1),rgba(235, 232, 226, 1));*/
+        height: screen;
     }
 }
 
