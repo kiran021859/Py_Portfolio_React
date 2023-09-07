@@ -64,18 +64,18 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.75);
     height: 80%;
 }
-
+/**
 #hover{
-    /**height: 0;
+    height: 0;
     background-image: linear-gradient(#F4A175, black );
     text-align: center;
     color: white;
     display: flexs;
     justify-content: center;
     border-radius: 15px;
-    cursor: pointer; **/
+    cursor: pointer;
 }
-
+ **/
 #hover h1{
     margin-top: 20%;
     font-size: 20px;
@@ -167,7 +167,7 @@
 
     #wave {
         
-        top: -135%;
+        top: -115%;
         left: 50%;
     }
 }
@@ -187,6 +187,14 @@
     
 }
 
+@media (max-height: 800px) {
+
+    #wave {
+        
+        top: -135%;
+        left: 50%;
+    }
+}
 
 
 
