@@ -10,7 +10,7 @@
 }
 
 #skills-text{
-    font-size: 350%;
+    font-size: 250%;
     font-family: 'Roboto Slab', serif;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -45,10 +45,10 @@
 #container{ 
    position: relative;
    display: grid; 
-   width: 100%;
+   width: 080%;
    height: auto;
    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-   grid-template-rows: 180px 180px 180px 180px;
+   grid-template-rows: 110px 110px 110px 110px;
    grid-gap: 20px;
    
 }
