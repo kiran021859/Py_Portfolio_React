@@ -88,17 +88,17 @@
 }
 
 #text1{
-    left: 65%;
+    left: 72.5%;
     top: 30%;
 }
 
 #text2{
-    left: 76%;
+    left: 81%;
     top: 30%;
 }
 
 #text3{
-    left: 70%;
+    left: 76%;
     top: 30%;
 }
 
@@ -198,5 +198,38 @@
     }
 }
 
+@media (max-height: 1025px) {
 
+    #text1{
+        left: 63%;
+        top: 30%;
+    }
+    
+    #text2{
+        left: 79%;
+        top: 30%;
+    }
+    
+    #text3{
+        left: 65%;
+        top: 30%;
+    }
+}
 
+@media (max-height: 1025px) {
+
+    #text1{
+        left: 63%;
+        top: 30%;
+    }
+    
+    #text2{
+        left: 79%;
+        top: 30%;
+    }
+    
+    #text3{
+        left: 65%;
+        top: 30%;
+    }
+}
