@@ -89,9 +89,9 @@ export default function AboutMe() {
                 goals.
                 </p>
                 <div className='icons-div' id='inside-icons-container'>
-                  <div className='icons' onClick={openLinkedInProfile}><BiLogoLinkedin size='20'/></div>
+                  <div className='icons' onClick={openLinkedInProfile}><BiLogoLinkedin size='20' color='white'/></div>
                   <a href={CV} target="_blank" rel="noopener noreferrer"><div className='icons'>CV</div></a>
-                  <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20'/></div>
+                  <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20' color='white'/></div>
                 </div>
               </div>
             </div>
