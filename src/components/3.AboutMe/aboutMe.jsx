@@ -62,7 +62,7 @@ export default function AboutMe() {
             <div id='aboutText1' className='text-center'>
               <h1>ABOUT ME</h1>
             </div>
-            <div className='' id='slideShow1'>
+            <div className='' id='aboutMeSlide_text'>
               <div className='' id="slidesShow">
 
                 <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 group' id='insideSlideShow'>
