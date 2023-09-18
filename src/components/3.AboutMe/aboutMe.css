@@ -89,7 +89,7 @@
     transition: .45s;
     opacity: 0;
     filter:blur(5px);
-    transform: translateX(10%);
+    transform: translateX(-10%);
 }
 
 #slideShow1{
