@@ -50,11 +50,11 @@ const [headerId, setHeaderId] = useState('header');
 
             
               <div className="navlist">
-                  <a href="#homepage">Home</a>
-                  <a href="#aboutpage">About</a>
-                  <a href="#skillsPage">Skills</a>
-                  <a href="#projects">Projects</a>
-                  <a href="#contact">Contact</a>
+                  <a href="#homepage" onClick={open_menu}>Home</a>
+                  <a href="#aboutpage" onClick={open_menu}>About</a>
+                  <a href="#skillsPage" onClick={open_menu}>Skills</a>
+                  <a href="#projects" onClick={open_menu}>Projects</a>
+                  <a href="#contact" onClick={open_menu}>Contact</a>
               </div>
             
 
