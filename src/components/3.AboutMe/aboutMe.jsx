@@ -59,39 +59,41 @@ export default function AboutMe() {
     <>
         <section className=''  id="aboutpage">
           <div className={`aboutMeContent${myAboutIsVisible ? "-active":""}`} ref={myAboutRef} > 
-            <div className='' id="slidesShow">
-
-              <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 group' id='insideSlideShow'>
-                <div className='hidden group-hover:block absolute left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' id='leftButton'>
-                  <BsChevronCompactLeft onClick={prevSlide} size='30'/>
-                </div>
-
-                <div className='hidden group-hover:block absolute right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' id='rightButton'>
-                <BsChevronCompactRight onClick={nextSlide} size='30'/>
-                </div>
-              </div>
+            <div id='aboutText1' className='text-center'>
+              <h1>ABOUT ME</h1>
             </div>
-            
-            <div className='' id='aboutMeText'>
-              <div id='text1' className='text-center'>
-                <h1>ABOUT ME</h1>
-              </div>
-              <div id='text2' className='border-t-4 border-b-4 rounded'>
-                <p>
-                I'm Kiran Isaacs, a proficient software developer skilled in HTML, CSS, JavaScript, Python, Java, and SQL. 
-                I excel in both front-end and back-end development, creating user-friendly interfaces and dynamic features 
-                linked to robust databases.<br/> <br/>
+            <div className='' id='slideShow1'>
+              <div className='' id="slidesShow">
 
-                I studied Business Systems at Rosbank College, gaining technical and analytical skills. During a 6-month system 
-                development learnership at Capaciti, I immersed myself in the software development lifecycle, refining my 
-                abilities and learning effective collaboration. With a solid programming foundation and practical experience, 
-                I'm well-prepared for challenging projects, driven by my passion for efficient applications aligned with business 
-                goals.
-                </p>
-                <div className='icons-div' id='inside-icons-container'>
-                  <div className='icons' onClick={openLinkedInProfile}><BiLogoLinkedin size='20' color='white'/></div>
-                  <a href={CV} target="_blank" rel="noopener noreferrer"><div className='icons'>CV</div></a>
-                  <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20' color='white'/></div>
+                <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500 group' id='insideSlideShow'>
+                  <div className='hidden group-hover:block absolute left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' id='leftButton'>
+                    <BsChevronCompactLeft onClick={prevSlide} size='30'/>
+                  </div>
+
+                  <div className='hidden group-hover:block absolute right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer' id='rightButton'>
+                  <BsChevronCompactRight onClick={nextSlide} size='30'/>
+                  </div>
+                </div>
+              </div>
+              
+              <div className='' id='aboutMeText'>
+                <div id='aboutText2' className='border-t-4 border-b-4 rounded'>
+                  <p>
+                  I'm Kiran Isaacs, a proficient software developer skilled in HTML, CSS, JavaScript, Python, Java, and SQL. 
+                  I excel in both front-end and back-end development, creating user-friendly interfaces and dynamic features 
+                  linked to robust databases.<br/> <br/>
+
+                  I studied Business Systems at Rosbank College, gaining technical and analytical skills. During a 6-month system 
+                  development learnership at Capaciti, I immersed myself in the software development lifecycle, refining my 
+                  abilities and learning effective collaboration. With a solid programming foundation and practical experience, 
+                  I'm well-prepared for challenging projects, driven by my passion for efficient applications aligned with business 
+                  goals.
+                  </p>
+                  <div className='icons-div' id='inside-icons-container'>
+                    <div className='icons' onClick={openLinkedInProfile}><BiLogoLinkedin size='20' color='white'/></div>
+                    <a href={CV} target="_blank" rel="noopener noreferrer"><div className='icons'>CV</div></a>
+                    <div className='icons' onClick={openGithubProfile}><BiLogoGithub size='20' color='white'/></div>
+                  </div>
                 </div>
               </div>
             </div>

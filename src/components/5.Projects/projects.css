@@ -9,7 +9,7 @@
     font-size: 350%;
     font-family: 'Roboto Slab', serif;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 0.5%;
     border-top-style: none;
     border-right-style: none;
     border-bottom-style: solid;
@@ -27,7 +27,7 @@
     width: 80%;
     height: 700px;
     display: grid;
-    padding: 16px 4px 16px 4px;
+    padding: 5px 4px 16px 4px;
     grid-template-columns: 32.5% 32.5% 32.5%;
     align-items: center;
     gap: 2%;
@@ -44,7 +44,7 @@
     width: 80%;
     height: 700px;
     display: grid;
-    padding: 16px 4px 16px 4px;
+    padding: 5px 4px 16px 4px;
     grid-template-columns: 32.5% 32.5% 32.5%;
     align-items: center;
     gap: 2%;
@@ -90,16 +90,19 @@
 #text1{
     left: 72.5%;
     top: 30%;
+    color: white;
 }
 
 #text2{
     left: 81%;
     top: 30%;
+    color: white;
 }
 
 #text3{
     left: 76%;
     top: 30%;
+    color: white;
 }
 
 #card:hover #hover{
