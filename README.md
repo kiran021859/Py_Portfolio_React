@@ -39,8 +39,17 @@ Before you begin, ensure you have the following installed:
    ```bash
    cd project root file name/Py_Portfolio_React
    ```
+3. Delete hosting files:
 
-3. Install the project dependencies:
+   delete the specific files from the root folder or errors will apear in the console once you run the project,
+   this will not affect the project if you just want to review the code.
+   ```delete
+   - firebase.json
+   - .firebaserc
+   - .firebase(folder) 
+   ```
+    
+5. Install the project dependencies:
 
    If using npm:
 
