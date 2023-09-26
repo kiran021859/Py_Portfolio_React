@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import './aboutMe.css';
-import html from '../../assets/pictures/html.png';
+
 import me from '../../assets/pictures/me.png';
-import project from '../../assets/pictures/myProject.png';
-import background from '../../assets/pictures/background.png';
+import me1 from '../../assets/pictures/me1.png';
+import me2 from '../../assets/pictures/me2.png';
+import me3 from '../../assets/pictures/me3.png';
 //import rightArrow from './pictures/right-arrow-solid-24.png';
 //import leftArrow from './pictures/left-arrow-solid-24.png';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
@@ -21,9 +22,9 @@ export default function AboutMe() {
 
   const slides = [
     {url: me},
-    {url: background}, 
-    {url: html}, 
-    {url: project},  
+    {url: me1}, 
+    {url: me2}, 
+    {url: me3},  
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0)
